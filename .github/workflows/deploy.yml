@@ -43,8 +43,8 @@ jobs:
           echo ".next:" && ls -la .next || true
           echo "out:" && ls -la out || true
 
-      # - name: Add .nojekyll (allow _next assets)
-      #   run: touch out/.nojekyll
+      - name: Add .nojekyll (allow _next assets)
+        run: touch out/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
