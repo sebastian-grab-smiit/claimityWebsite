@@ -4,8 +4,8 @@ import Link from "next/link"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-muted/30 to-background pt-24 pb-16 md:pt-32 md:pb-24">
-      <div className="container mx-auto px-4">
+    <section className="relative overflow-hidden bg-muted/30 pt-24 pb-16 md:pt-32 md:pb-24">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 md:px-8 xl:px-16 2xl:px-20">
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#3FC1C9]/10 px-4 py-2 text-sm text-[#3FC1C9] font-medium">
             <CheckCircle2 className="h-4 w-4" />

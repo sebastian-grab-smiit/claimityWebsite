@@ -15,7 +15,8 @@ export const metadata: Metadata = {
     description: "Automatisierte Expertenvermittlung für effizientes Schadenmanagement",
     type: "website",
     locale: "de_CH",
-  }
+  },
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

@@ -32,7 +32,7 @@ const badges = ["API-first", "Schweizer Hosting", "DSGVO-konform"]
 export function Integration() {
   return (
     <section id="integration" className="py-16 md:py-24 bg-[#3FC1C9]/5">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 md:px-8 xl:px-16 2xl:px-20">
         <SectionHeader
           overline="Digitale Integration"
           title="Integration leicht gemacht"

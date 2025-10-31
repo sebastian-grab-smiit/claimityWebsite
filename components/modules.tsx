@@ -8,23 +8,21 @@ const modules = [
   {
     icon: Car,
     title: "Fahrzeugexpertisen",
-    description: "Umfassende Gutachten für alle Fahrzeugtypen – vom Kleinwagen bis zum Nutzfahrzeug",
+    description: "Umfassende Gutachten für alle Fahrzeugtypen",
     services: [
       "Standard-Schadengutachten mit detaillierter Kalkulation",
       "Kurz- und Live-Expertisen für schnelle Entscheidungen",
-      "Wrackverkauf und Verwertungsabwicklung",
       "Rechnungsprüfung und Plausibilitätschecks",
     ],
   },
   {
     icon: Building2,
     title: "Sachverständige",
-    description: "Professionelle Begutachtung von Gebäude-, Tiefbau- und Hausratschäden",
+    description: "Professionelle Begutachtung von Gebäude- und Hausratschäden",
     services: [
       "Gebäudeschäden: Feuer, Wasser, Sturm, Erdbeben",
       "Tiefbauschäden: Fundamente, Leitungen, Infrastruktur",
       "Hausratschäden: Inventar, Einrichtung, Wertsachen",
-      "Normierte Dokumentation nach Schweizer Standards",
     ],
   },
   {
@@ -35,7 +33,6 @@ const modules = [
       "Verdachtsabklärung bei auffälligen Schadenmustern",
       "Beweissicherung durch zertifizierte Ermittler",
       "Umfassende Ermittlungsberichte mit Handlungsempfehlungen",
-      "Zusammenarbeit mit Behörden und Rechtsabteilungen",
     ],
   },
 ]
@@ -43,7 +40,7 @@ const modules = [
 export function Modules() {
   return (
     <section id="module" className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 md:px-8 xl:px-16 2xl:px-20">
         <SectionHeader
           overline="Module & Leistungsbereiche"
           title="Drei Kernbereiche – eine Plattform"

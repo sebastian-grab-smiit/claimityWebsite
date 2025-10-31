@@ -1,11 +1,13 @@
 "use client"
 
+import { DialogDescription } from "@/components/ui/dialog"
+
 import { useState } from "react"
 import { SectionHeader } from "@/components/section-header"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { Quote, Mail, Phone } from "lucide-react"
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import { Quote } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -14,7 +16,7 @@ const references = [
     id: 1,
     quote:
       "Mit Claimity haben wir unsere Bearbeitungszeit um 40% reduziert. Die automatische Zuweisung und die ständige Verfügbarkeit qualifizierter Experten spart uns täglich Stunden.",
-    name: "Amin Gerber",
+    author: "Amin Gerber",
     role: "Geschäftsführung",
     company: "AFES Schweiz AG",
     image: "/professional-man-portrait.png",
@@ -34,7 +36,7 @@ const references = [
     id: 2,
     quote:
       "Durch Claimity erhalten wir einen durchgängigen Zufluss an Expertenanfragen von zahlreichen Versicherungen. Das ist effektiver als jede Vertriebskampagne.",
-    name: "Toni Tulliani",
+    author: "Toni Tulliani",
     role: "Geschäftsführung",
     company: "Car-Logistics AG (HCG)",
     image: "/professional-man-portrait.png",
@@ -57,44 +59,41 @@ export function References() {
 
   return (
     <section id="referenzen" className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 md:px-8 xl:px-16 2xl:px-20">
         <SectionHeader
           overline="Referenzen"
           title="Vertrauen durch Ergebnisse"
-          description="Führende Versicherungen setzen auf Claimity für ihr digitales Schadenmanagement."
+          description="Erfahren Sie, wie Claimity Versicherungen und Dienstleister bei der Digitalisierung unterstützt"
         />
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           {references.map((reference) => (
-            <Card
-              key={reference.id}
-              className="border-2 hover:border-[#3FC1C9]/50 transition-colors bg-white shadow-sm"
-            >
-              <CardContent className="pt-6">
-                <Quote className="h-8 w-8 text-[#3FC1C9] mb-4" />
-                <p className="text-lg text-foreground mb-6 italic leading-relaxed">"{reference.quote}"</p>
-                <div className="flex items-center gap-4 mb-4">
+            <Card key={reference.id} className="h-full flex flex-col">
+              <CardHeader>
+                <Quote className="h-8 w-8 text-primary mb-4" />
+                <blockquote className="text-lg italic text-foreground">&ldquo;{reference.quote}&rdquo;</blockquote>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-4">
                   <Image
                     src={reference.image || "/placeholder.svg"}
-                    alt={reference.name}
+                    alt={reference.author}
                     width={60}
                     height={60}
                     className="rounded-full"
                   />
                   <div>
-                    <div className="font-semibold text-foreground">{reference.name}</div>
-                    <div className="text-sm text-foreground/80">{reference.role}</div>
-                    <div className="text-sm font-medium text-primary">{reference.company}</div>
+                    <p className="font-semibold">{reference.author}</p>
+                    <p className="text-sm text-muted-foreground">{reference.role}</p>
+                    <p className="text-sm text-muted-foreground">{reference.company}</p>
                   </div>
                 </div>
-                <Button
-                  variant="outline"
-                  className="w-full bg-transparent"
-                  onClick={() => setSelectedReference(reference)}
-                >
+              </CardContent>
+              <CardFooter className="mt-auto">
+                <Button variant="outline" onClick={() => setSelectedReference(reference)}>
                   Mehr dazu
                 </Button>
-              </CardContent>
+              </CardFooter>
             </Card>
           ))}
         </div>
@@ -111,7 +110,7 @@ export function References() {
           <DialogHeader>
             <DialogTitle className="text-2xl">Erfolgsgeschichte: {selectedReference?.company}</DialogTitle>
             <DialogDescription>
-              {selectedReference?.name}, {selectedReference?.role}
+              {selectedReference?.author}, {selectedReference?.role}
             </DialogDescription>
           </DialogHeader>
           {selectedReference && (
@@ -132,14 +131,12 @@ export function References() {
                 <h4 className="font-semibold text-foreground mb-3">Kontakt zur Referenz</h4>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm">
-                    <Mail className="h-4 w-4 text-[#3FC1C9]" />
-                    <a href={`mailto:${selectedReference.contact.email}`} className="text-[#3FC1C9] hover:underline">
+                    <a href={`mailto:${selectedReference.contact.email}`} className="text-primary hover:underline">
                       {selectedReference.contact.email}
                     </a>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
-                    <Phone className="h-4 w-4 text-[#3FC1C9]" />
-                    <a href={`tel:${selectedReference.contact.phone}`} className="text-[#3FC1C9] hover:underline">
+                    <a href={`tel:${selectedReference.contact.phone}`} className="text-primary hover:underline">
                       {selectedReference.contact.phone}
                     </a>
                   </div>

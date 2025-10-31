@@ -1,6 +1,7 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { WhyClaimity } from "@/components/why-claimity"
+import { ValueProposition } from "@/components/value-proposition"
 import { Features } from "@/components/features"
 import { Modules } from "@/components/modules"
 import { Integration } from "@/components/integration"
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <WhyClaimity />
+        <ValueProposition />
         <Features />
         <Modules />
         <Integration />

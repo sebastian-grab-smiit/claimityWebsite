@@ -1,60 +1,78 @@
 import { SectionHeader } from "@/components/section-header"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Zap, BarChart3, Users, Shield } from "lucide-react"
 
 const features = [
   {
     icon: Zap,
     title: "Automatisierte Expertenzuweisung",
-    description: "Intelligente Vermittlung basierend auf Verfügbarkeit, Fachgebiet und Standort",
-    benefits: ["Keine manuelle Suche mehr", "Optimale Auslastung des Expertennetzwerks", "Schnellere Reaktionszeiten"],
+    benefits: [
+      "Keine manuelle Suche mehr",
+      "Optimale Netzwerk-Auslastung",
+      "Schnellere Reaktionszeiten",
+      "Transparente Zuteilungskriterien",
+    ],
   },
   {
     icon: BarChart3,
     title: "Echtzeit-Status & Dashboard",
-    description: "Vollständiger Überblick über alle laufenden und abgeschlossenen Fälle",
-    benefits: ["Live-Tracking aller Schadenfälle", "KPI-Dashboards für Management", "Automatische Fristüberwachung"],
+    benefits: [
+      "Live-Tracking aller Schadenfälle",
+      "KPI-Dashboards für Management",
+      "Automatische Fristüberwachung",
+      "Export & Reporting-Funktionen",
+    ],
   },
   {
     icon: Users,
     title: "Rollen & Rechte",
-    description: "Granulare Zugriffskontrolle und Berechtigungsmanagement",
-    benefits: ["Flexible Rollendefinition", "Mandantenfähigkeit", "Single Sign-On (SSO)"],
+    benefits: [
+      "Flexible Rollendefinition",
+      "Mandantenfähigkeit",
+      "Single Sign-On (SSO)",
+      "Granulare Zugriffssteuerung",
+    ],
   },
   {
     icon: Shield,
     title: "DSG/DSGVO & Hosting Schweiz",
-    description: "Vollständige Compliance mit Schweizer und EU-Datenschutzrecht",
-    benefits: ["Schweizer Rechenzentren", "Ende-zu-Ende-Verschlüsselung", "Vollständiger Audit-Trail"],
+    benefits: [
+      "Schweizer Rechenzentren",
+      "Ende-zu-Ende-Verschlüsselung",
+      "Vollständiger Audit-Trail",
+      "ISO-zertifizierte Infrastruktur",
+    ],
   },
 ]
 
 export function Features() {
   return (
-    <section id="funktionen" className="py-16 md:py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <SectionHeader
-          overline="Kernfunktionen"
-          title="Alles, was Sie für effizientes Schadenmanagement brauchen"
-          description="Eine Plattform, die den gesamten Prozess von der Schadenmeldung bis zur Abrechnung digitalisiert."
-        />
+    <section id="funktionen" className="py-12 md:py-16 bg-muted/30">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 md:px-8 xl:px-16 2xl:px-20">
+        <SectionHeader overline="Kernfunktionen" title="Alles, was Sie für effizientes Schadenmanagement brauchen" />
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <p className="text-base md:text-lg lg:text-xl text-muted-foreground text-center mx-auto w-full leading-tight md:leading-snug whitespace-normal md:whitespace-nowrap mt-4">
+          Eine Plattform, die den Prozess von der Schadenmeldung bis zur Abrechnung digitalisiert.
+        </p>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-2">
           {features.map((feature) => (
-            <Card key={feature.title} className="border-2 hover:border-[#3FC1C9]/50 transition-colors bg-white">
-              <CardHeader>
-                <div className="h-12 w-12 rounded-lg bg-[#3FC1C9]/15 flex items-center justify-center mb-4">
+            <Card
+              key={feature.title}
+              className="border-2 hover:border-[#3FC1C9]/50 transition-colors bg-white h-full flex flex-col"
+            >
+              <CardHeader className="pb-0">
+                <div className="h-12 w-12 rounded-lg bg-[#3FC1C9]/15 flex items-center justify-center mb-2">
                   <feature.icon className="h-6 w-6 text-[#3FC1C9]" />
                 </div>
-                <CardTitle className="text-xl">{feature.title}</CardTitle>
-                <CardDescription>{feature.description}</CardDescription>
+                <CardTitle className="text-xl mb-1">{feature.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
+              <CardContent className="pt-0 flex-1">
+                <ul className="grid grid-cols-2 gap-x-4 gap-y-2 mt-0">
                   {feature.benefits.map((benefit) => (
-                    <li key={benefit} className="flex items-start gap-2 text-sm">
-                      <span className="text-[#3FC1C9] mt-0.5">•</span>
-                      <span className="text-foreground/80">{benefit}</span>
+                    <li key={benefit} className="flex items-center gap-2 text-sm">
+                      <span className="text-[#3FC1C9] flex-shrink-0">•</span>
+                      <span className="text-foreground/80 leading-tight">{benefit}</span>
                     </li>
                   ))}
                 </ul>

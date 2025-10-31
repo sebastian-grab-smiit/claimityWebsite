@@ -1,28 +1,28 @@
 import { SectionHeader } from "@/components/section-header"
 import { Clock, FileX, TrendingDown, Users } from "lucide-react"
 import { CheckCircle2, Zap, BarChart3, Plug } from "lucide-react"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 
-const painPoints = [
+const challenges = [
   {
     icon: Clock,
     title: "Zeitdruck & Ressourcenmangel",
-    description: "Manuelle Zuweisung und Koordination binden wertvolle Kapazitäten",
+    description: "Manuelle Prozesse binden Kapazitäten und verzögern die Bearbeitung",
   },
   {
     icon: FileX,
     title: "Medienbrüche & Intransparenz",
-    description: "E-Mail, Telefon, Excel – kein einheitlicher Überblick über Schadenfälle",
+    description: "Kein einheitlicher Überblick über Schadenfälle und Status",
   },
   {
     icon: TrendingDown,
     title: "Qualität & Compliance",
-    description: "Unterschiedliche Kanäle und dezentrale Datenhaltung gefährden Qualität & Nachweispflichten",
+    description: "Dezentrale Datenhaltung gefährdet Qualität und Nachweispflichten",
   },
   {
     icon: Users,
     title: "Fehlende Verfügbarkeit",
-    description:
-      "In der jeweiligen Region und für den jeweiligen Fall sind nicht ausreichend qualifizierte Experten verfügbar",
+    description: "Qualifizierte Experten in der Region nicht verfügbar",
   },
 ]
 
@@ -30,75 +30,72 @@ const solutions = [
   {
     icon: Zap,
     title: "Automatisierte Zuweisung",
-    description: "Experten werden nach Verfügbarkeit, Fachgebiet und Region automatisch zugeteilt",
+    description: "Experten nach Verfügbarkeit und Fachgebiet automatisch zugeteilt",
   },
   {
     icon: BarChart3,
     title: "Echtzeit-Reporting",
-    description: "Vollständige Transparenz über Status, Fristen und Kosten in einem Dashboard",
+    description: "Transparenz über Status, Fristen und Kosten im Dashboard",
   },
   {
     icon: Plug,
     title: "Offene API",
-    description: "Nahtlose Integration in bestehende Versicherungssysteme ohne Medienbruch",
+    description: "Nahtlose Integration in bestehende Systeme ohne Medienbruch",
   },
   {
     icon: CheckCircle2,
     title: "Schnelle Expertise",
-    description: "Großes Netzwerk qualifizierter Experten in allen Regionen für schnelle Verfügbarkeit",
+    description: "Großes Netzwerk qualifizierter Experten für schnelle Verfügbarkeit",
   },
-]
-
-const metrics = [
-  { value: "30%", label: "weniger Admin-Aufwand" },
-  { value: "24h", label: "Reaktionszeit" },
-  { value: "100%", label: "digitale Integration" },
 ]
 
 export function WhyClaimity() {
   return (
-    <section id="warum-claimity" className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="warum-claimity" className="py-10 md:py-12 bg-[#3FC1C9]/5">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 md:px-8 xl:px-16 2xl:px-20">
         <SectionHeader
           overline="Warum Claimity"
-          title="Von manuell zu digital – in einem Schritt"
-          description="Traditionelle Schadenabwicklung kostet Zeit, Geld und Nerven. Claimity automatisiert den gesamten Prozess."
+          title="Von manuell zu digital"
+          description="Traditionelle Schadenabwicklung kostet Zeit und Geld. Claimity automatisiert den Prozess."
         />
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {painPoints.map((point) => (
-            <div key={point.title} className="rounded-lg bg-muted/30 p-6 shadow-sm">
-              <point.icon className="h-8 w-8 text-destructive mb-4" />
-              <h3 className="font-semibold text-foreground mb-2">{point.title}</h3>
-              <p className="text-sm text-foreground/80">{point.description}</p>
-            </div>
+        {/* Herausforderungen */}
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+          {challenges.map((challenge, index) => (
+            <Card
+              key={index}
+              className="h-full flex flex-col bg-white border-[#3FC1C9]/20 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
+            >
+              <CardHeader className="pb-0">
+                <div className="w-12 h-12 rounded-lg bg-white shadow-md flex items-center justify-center mb-3">
+                  <challenge.icon className="w-6 h-6 text-red-500" />
+                </div>
+                <CardTitle className="text-base font-semibold mb-2">{challenge.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-0 flex-1">
+                <p className="text-sm text-muted-foreground line-clamp-2">{challenge.description}</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
 
-        <div className="mt-16">
-          <h3 className="text-2xl font-bold text-center mb-8 text-[#3FC1C9]">Unser Ansatz</h3>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {solutions.map((solution) => (
-              <div
-                key={solution.title}
-                className="rounded-lg bg-[#3FC1C9]/10 p-6 shadow-sm border-2 border-[#3FC1C9]/30"
-              >
-                <div className="h-12 w-12 rounded-lg bg-[#3FC1C9] flex items-center justify-center mb-4">
-                  <solution.icon className="h-6 w-6 text-white" />
+        {/* Lösungen */}
+        <div className="mt-5 md:mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+          {solutions.map((solution, index) => (
+            <Card
+              key={index}
+              className="h-full flex flex-col bg-white border-[#3FC1C9]/20 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-200"
+            >
+              <CardHeader className="pb-0">
+                <div className="w-12 h-12 rounded-lg bg-white shadow-md flex items-center justify-center mb-3">
+                  <solution.icon className="w-6 h-6 text-[#3FC1C9]" />
                 </div>
-                <h3 className="font-semibold text-foreground mb-2">{solution.title}</h3>
-                <p className="text-sm text-foreground/80">{solution.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
-          {metrics.map((metric) => (
-            <div key={metric.label} className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-[#3FC1C9] mb-2">{metric.value}</div>
-              <div className="text-sm text-foreground/80">{metric.label}</div>
-            </div>
+                <CardTitle className="text-base font-semibold mb-2">{solution.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="pt-0 flex-1">
+                <p className="text-sm text-muted-foreground line-clamp-2">{solution.description}</p>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

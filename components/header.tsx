@@ -7,13 +7,10 @@ import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navigation = [
-  { name: "Funktionen", href: "#funktionen" },
   { name: "Warum Claimity", href: "#warum-claimity" },
+  { name: "Funktionen", href: "#funktionen" },
   { name: "Module", href: "#module" },
-  { name: "Integration", href: "#integration" },
   { name: "Prozess", href: "#prozess" },
-  { name: "Referenzen", href: "#referenzen" },
-  { name: "Kontakt", href: "/kontakt" },
 ]
 
 export function Header() {
@@ -35,7 +32,7 @@ export function Header() {
         isScrolled ? "bg-background/95 backdrop-blur-sm shadow-sm" : "bg-transparent",
       )}
     >
-      <div className="container mx-auto px-4">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 md:px-8 xl:px-16 2xl:px-20">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <div className="text-2xl font-bold text-primary">Claimity</div>
@@ -56,7 +53,7 @@ export function Header() {
 
           <div className="hidden lg:flex items-center space-x-4">
             <Button asChild>
-              <Link href="/kontakt">Demo anfordern</Link>
+              <Link href="/kontakt">Vertrieb kontaktieren</Link>
             </Button>
           </div>
 
@@ -82,7 +79,7 @@ export function Header() {
               ))}
               <Button asChild className="w-full">
                 <Link href="/kontakt" onClick={() => setIsMobileMenuOpen(false)}>
-                  Demo anfordern
+                  Vertrieb kontaktieren
                 </Link>
               </Button>
             </nav>

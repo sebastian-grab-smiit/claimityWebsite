@@ -31,7 +31,7 @@ const steps = [
 export function Process() {
   return (
     <section id="prozess" className="py-16 md:py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 md:px-8 xl:px-16 2xl:px-20">
         <SectionHeader
           overline="So funktioniert's"
           title="Vier Schritte zum digitalen Schadenmanagement"
