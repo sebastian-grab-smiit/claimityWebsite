@@ -459,7 +459,7 @@ export default function Home() {
                     <UserCog className="h-7 w-7 text-[#329AA1]" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-xl font-bold text-gray-900">Sachverständige</h3>
+                    <h3 className="text-xl font-bold text-gray-900">Sachverständiger</h3>
                     <p className="text-sm text-gray-600">Professionelle Begutachtung von Gebäude- und Hausratschäden</p>
                   </div>
 
@@ -501,7 +501,7 @@ export default function Home() {
                     <ShieldAlert className="h-7 w-7 text-[#329AA1]" />
                   </div>
                   <div className="space-y-3">
-                    <h3 className="text-xl font-bold text-gray-900">Betrugsmittlung</h3>
+                    <h3 className="text-xl font-bold text-gray-900">Betrugsermittlung</h3>
                     <p className="text-sm text-gray-600">Diskrete und professionelle Aufklärung von Verdachtsfällen</p>
                   </div>
 

@@ -18,7 +18,7 @@ export function Header() {
       ? {
           why: "Warum Claimity",
           features: "Funktionen",
-          modules: "Module",
+          modules: "Dienstleistungen",
           book: "Termin buchen",
           clientLogin: "Anmelden",
           contact: "Kontakt",
@@ -28,7 +28,7 @@ export function Header() {
       ? {
           why: "Why Claimity",
           features: "Features",
-          modules: "Modules",
+          modules: "Services",
           book: "Calendar Booking",
           clientLogin: "Login",
           contact: "Contact us",
@@ -37,7 +37,7 @@ export function Header() {
       : {
           why: "Pourquoi Claimity",
           features: "Fonctionnalités",
-          modules: "Modules",
+          modules: "Services",
           book: "Réserver une démo",
           clientLogin: "Connexion",
           contact: "Contact",
