@@ -83,7 +83,7 @@ export default function ContactPageDEClient() {
             <div className="space-y-12">
               <div className="space-y-6">
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                  Kontakt aufnehmen mit Claimity
+                  Kontakt auf-nehmen mit Claimity
                 </h1>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   Haben Sie Fragen, Feedback oder benötigen Sie Unterstützung? Wir helfen Ihnen gerne weiter.
