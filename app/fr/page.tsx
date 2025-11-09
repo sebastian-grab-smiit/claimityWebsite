@@ -26,6 +26,7 @@ import {
   ShieldAlert,
   UserCog,
 } from "lucide-react"
+import { FeatureCarousel } from "@/components/feature-carousel"
 
 export const metadata: Metadata = {
   title: "Claimity – Gestion des sinistres. Digital. Efficace.",
@@ -643,21 +644,26 @@ export default function Home() {
       <section id="process" className="bg-white py-12 md:py-20 lg:py-32">
         <div className="mx-auto max-w-7xl px-6">
           {/* Section Header */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-12 md:mb-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-start mb-6 md:mb-8">
             {/* Left - Heading */}
             <div className="space-y-4">
               <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Comment ça fonctionne</p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Quatre étapes vers une gestion des sinistres numérique
               </h2>
-            </div>
-
-            {/* Right - Description & CTA */}
-            <div className="space-y-6">
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed mb-2">
                 De la déclaration à la facturation – entièrement automatisé et transparent.
               </p>
             </div>
+
+            {/* Right - Carousel */}
+            <FeatureCarousel
+              images={[
+                { src: "/assets/fr/new_claim.png", alt: "Attribution automatique – nouveau sinistre" },
+                { src: "/assets/fr/claim.png", alt: "Déclarer un sinistre – téléchargement et saisie" },
+                { src: "/assets/fr/report.png", alt: "Rapport et clôture – documents standardisés" },
+              ]}
+            />
           </div>
 
           {/* Process Steps */}
