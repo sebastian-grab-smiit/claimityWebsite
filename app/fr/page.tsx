@@ -121,7 +121,7 @@ export default function Home() {
             {/* Right Image */}
             <div className="relative w-full h-64 md:h-96 lg:h-[550px] rounded-2xl overflow-hidden">
               <Image
-                src="/assets/person-working-on-laptop-with-documents-profession.jpg"
+                src="/assets/Hero.png"
                 alt="Gestion digitale des sinistres"
                 fill
                 className="object-cover"
