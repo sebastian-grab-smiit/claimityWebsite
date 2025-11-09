@@ -22,6 +22,9 @@ import {
   Settings,
   ChevronLeft,
   ChevronRight,
+  Car,
+  ShieldAlert,
+  UserCog,
 } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -403,19 +406,14 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             {/* Card 1 - Vehicle assessments */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
-              {/* Image */}
-              <div className="relative h-48 sm:h-56 md:h-64 w-full">
-                <Image
-                  src="/assets/car-accident-damaged-vehicles.jpg"
-                  alt="Expertises véhicules"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              {/* Icon shown below instead of image */}
 
               {/* Content */}
               <div className="p-8 flex flex-col flex-1">
                 <div className="space-y-6 flex-1">
+                  <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm">
+                    <Car className="h-7 w-7 text-[#329AA1]" />
+                  </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-bold text-gray-900">Expertises automobiles</h3>
                     <p className="text-sm text-gray-600">Expertises complètes pour tous types de véhicules</p>
@@ -452,19 +450,14 @@ export default function Home() {
 
             {/* Card 2 - Surveyors */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
-              {/* Image */}
-              <div className="relative h-48 sm:h-56 md:h-64 w-full">
-                <Image
-                  src="/assets/brick-residential-house-building.jpg"
-                  alt="Experts immobilier"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              {/* Icon shown below instead of image */}
 
               {/* Content */}
               <div className="p-8 flex flex-col flex-1">
                 <div className="space-y-6 flex-1">
+                  <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm">
+                    <UserCog className="h-7 w-7 text-[#329AA1]" />
+                  </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-bold text-gray-900">Experts immobilier</h3>
                     <p className="text-sm text-gray-600">Évaluations professionnelles des dommages aux bâtiments et aux biens mobiliers</p>
@@ -499,19 +492,14 @@ export default function Home() {
 
             {/* Card 3 - Fraud investigation */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
-              {/* Image */}
-              <div className="relative h-48 sm:h-56 md:h-64 w-full">
-                <Image
-                  src="/assets/person-working-on-laptop-with-documents-profession.jpg"
-                  alt="Enquêtes sur les fraudes"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              {/* Icon shown below instead of image */}
 
               {/* Content */}
               <div className="p-8 flex flex-col flex-1">
                 <div className="space-y-6 flex-1">
+                  <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm">
+                    <ShieldAlert className="h-7 w-7 text-[#329AA1]" />
+                  </div>
                   <div className="space-y-3">
                     <h3 className="text-xl font-bold text-gray-900">Enquêtes sur les fraudes</h3>
                     <p className="text-sm text-gray-600">Enquêtes discrètes et professionnelles en cas de suspicion</p>
