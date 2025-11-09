@@ -83,11 +83,10 @@ export default function ContactPageFRClient() {
             <div className="space-y-12">
               <div className="space-y-6">
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                  Contacter Claimity
+                  Prendre contact avec Claimity
                 </h1>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  Vous avez des questions, des retours ou besoin d’assistance ? Nous sommes là pour vous aider.
-                  Contactez notre équipe — nous vous répondrons dans les plus brefs délais.
+                  Vous avez des questions, des commentaires ou avez besoin d’assistance ? Nous sommes ravis de vous aider. Contactez notre équipe – nous vous répondrons dans les plus brefs délais.
                 </p>
               </div>
 
@@ -112,9 +111,9 @@ export default function ContactPageFRClient() {
 
                 <div className="flex items-start gap-4">
                   <div className="space-y-1">
-                    <h3 className="text-base font-bold text-gray-900">Vous souhaitez parler immédiatement&nbsp;?</h3>
+                    <h3 className="text-base font-bold text-gray-900">Souhaitez-vous parler immédiatement&nbsp;?</h3>
                     <a href="/fr/contact/#book" className="text-base text-teal-600 hover:text-teal-700 transition-colors">
-                      Réserver un créneau
+                      Prendre rendez-vous
                     </a>
                   </div>
                 </div>
@@ -186,7 +185,7 @@ export default function ContactPageFRClient() {
 
                   <div className="space-y-2">
                     <label htmlFor="phone" className="text-sm font-medium text-gray-900">
-                      Téléphone (optionnel)
+                      Téléphone (facultatif)
                     </label>
                     <Input
                       id="phone"
@@ -202,14 +201,14 @@ export default function ContactPageFRClient() {
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium text-gray-900">
-                    Comment pouvons‑nous vous aider&nbsp;? <span className="text-red-500">*</span>
+                    Comment pouvons-nous vous aider&nbsp;? <span className="text-red-500">*</span>
                   </label>
                   <Textarea
                     id="message"
                     name="message"
                     required
                     rows={6}
-                    placeholder="Veuillez saisir votre message"
+                    placeholder="Envoyer la demande"
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full bg-white border-gray-300 focus:border-teal-600 focus:ring-teal-600 resize-none"
@@ -229,8 +228,7 @@ export default function ContactPageFRClient() {
                 </Button>
 
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  En envoyant ce formulaire, vous acceptez le traitement de vos données aux fins de traitement de votre
-                  demande. Pour plus d’informations, veuillez consulter notre{" "}
+                  En envoyant ce formulaire, vous acceptez le traitement de vos données pour le traitement de votre demande. Pour plus d’informations, veuillez consulter notre{" "}
                   <a href="/fr/privacy" className="text-teal-600 hover:text-teal-700 underline">
                     Politique de confidentialité
                   </a>

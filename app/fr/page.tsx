@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = {
   title: "Claimity – Gestion des sinistres. Digital. Efficace.",
   description:
-    "Claimity attribue automatiquement des experts certifiés — pour un traitement plus rapide, moins d'efforts et une transparence totale.",
+    "Claimity met automatiquement en relation des experts certifiés – pour un traitement plus rapide, moins d’efforts et une transparence totale.",
   alternates: {
     canonical: "/fr/",
     languages: {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Claimity – Gestion des sinistres. Digital. Efficace.",
     description:
-      "Claimity attribue automatiquement des experts certifiés — pour un traitement plus rapide, moins d'efforts et une transparence totale.",
+      "Claimity met automatiquement en relation des experts certifiés – pour un traitement plus rapide, moins d’efforts et une transparence totale.",
   },
 }
 
@@ -75,8 +75,7 @@ export default function Home() {
                 </h1>
 
                 <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                  Claimity attribue automatiquement des experts certifiés — pour un traitement plus rapide, moins
-                  d’administration et une transparence totale.
+                  Claimity met automatiquement en relation des experts certifiés – pour un traitement plus rapide, moins d’efforts et une transparence totale.
                 </p>
               </div>
 
@@ -106,7 +105,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2">
                   <FileText className="h-5 w-5 text-gray-700" />
-                  <span className="text-sm font-medium text-gray-700">Conforme RGPD</span>
+                  <span className="text-sm font-medium text-gray-700">Conforme au RGPD</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-gray-700" />
@@ -137,7 +136,7 @@ export default function Home() {
             <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Pourquoi Claimity</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Du manuel au digital</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Le traitement traditionnel des sinistres coûte du temps et de l’argent. Claimity numérise le processus.
+              La gestion traditionnelle des sinistres prend du temps et coûte cher. Claimity automatise le processus.
             </p>
           </div>
 
@@ -148,9 +147,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <Clock className="h-6 w-6 text-[#329AA1]" />
               </div>
-              <h3 className="text-sm font-bold text-gray-900">Pression temporelle & ressources limitées</h3>
+              <h3 className="text-sm font-bold text-gray-900">Pression temporelle & manque de ressources</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Les processus manuels mobilisent des capacités et retardent le traitement
+                Les processus manuels mobilisent des capacités et retardent le traitement.
               </p>
             </div>
 
@@ -159,9 +158,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <FileCheck className="h-6 w-6 text-[#329AA1]" />
               </div>
-              <h3 className="text-sm font-bold text-gray-900">Ruptures médias & manque de transparence</h3>
+              <h3 className="text-sm font-bold text-gray-900">Ruptures de médias & manque de transparence</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Pas de vue d’ensemble unifiée des dossiers et des statuts
+                Aucune vue d’ensemble uniforme sur les sinistres et leur statut.
               </p>
             </div>
 
@@ -172,7 +171,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-bold text-gray-900">Qualité & conformité</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                La décentralisation des données met en péril la qualité et l’auditabilité
+                La décentralisation des données compromet la qualité et les obligations de traçabilité.
               </p>
             </div>
 
@@ -183,7 +182,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-bold text-gray-900">Disponibilité limitée</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Manque d’experts qualifiés disponibles dans la région
+                Les experts qualifiés ne sont pas toujours disponibles dans la région.
               </p>
             </div>
 
@@ -194,7 +193,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-bold text-gray-900">Attribution automatisée</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Attribution automatique des experts selon la disponibilité et la spécialité
+                Les experts sont assignés automatiquement selon leur disponibilité et leur domaine de compétence.
               </p>
             </div>
 
@@ -205,7 +204,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-bold text-gray-900">Reporting en temps réel</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Transparence sur les statuts, délais et coûts dans le tableau de bord
+                Transparence sur les statuts, les délais et les coûts via un tableau de bord.
               </p>
             </div>
 
@@ -216,7 +215,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-bold text-gray-900">Intégration API</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Intégration fluide dans les systèmes existants sans rupture
+                Intégration fluide dans les systèmes existants sans rupture de médias.
               </p>
             </div>
 
@@ -227,7 +226,7 @@ export default function Home() {
               </div>
               <h3 className="text-sm font-bold text-gray-900">Expertise rapide</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Large réseau d’experts qualifiés pour une disponibilité rapide
+                Un large réseau d’experts qualifiés pour une disponibilité immédiate.
               </p>
             </div>
           </div>
@@ -240,8 +239,8 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-4">
-              <h2 className="text-3xl lg:text-4xl font-bold text-white">La valeur en chiffres</h2>
-              <p className="text-lg text-gray-300">Des résultats mesurables grâce à la transformation digitale</p>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white">La valeur ajoutée en chiffres</h2>
+              <p className="text-lg text-gray-300">Des résultats mesurables grâce à la transformation numérique</p>
             </div>
 
             {/* Right Stats */}
@@ -249,19 +248,19 @@ export default function Home() {
               {/* Stat 1 */}
               <div className="space-y-2">
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">30%</div>
-                <p className="text-sm text-gray-300">Moins de tâches administratives</p>
+                <p className="text-sm text-gray-300">de réduction de la charge administrative</p>
               </div>
 
               {/* Stat 2 */}
               <div className="space-y-2">
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">24h</div>
-                <p className="text-sm text-gray-300">Délai de réaction</p>
+                <p className="text-sm text-gray-300">de délai de réaction</p>
               </div>
 
               {/* Stat 3 */}
               <div className="space-y-2">
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">100%</div>
-                <p className="text-sm text-gray-300">Intégration digitale</p>
+                <p className="text-sm text-gray-300">d’intégration numérique</p>
               </div>
             </div>
           </div>
@@ -273,14 +272,14 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
-            <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Fonctionnalités clés</p>
+            <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Fonctions principales</p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
               Tout ce dont vous avez besoin pour une
               <br />
               gestion des sinistres efficace
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Une plateforme qui numérise le processus de la déclaration du sinistre jusqu’au règlement.
+              Une plateforme qui digitalise l’ensemble du processus, de la déclaration du sinistre jusqu’à la facturation.
             </p>
           </div>
 
@@ -303,7 +302,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span className="text-sm text-gray-700">Délais de réponse plus courts</span>
+                  <span className="text-sm text-gray-700">Temps de réaction plus courts</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
@@ -317,15 +316,15 @@ export default function Home() {
               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <BarChart3 className="h-7 w-7 text-[#329AA1]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Statut en temps réel & tableau de bord</h3>
+              <h3 className="text-xl font-bold text-gray-900">Statut en temps réel & Dashboard</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span className="text-sm text-gray-700">Suivi en direct de tous les dossiers</span>
+                  <span className="text-sm text-gray-700">Live-Tracking de tous les dossiers de sinistre</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span className="text-sm text-gray-700">Tableaux de bord KPI pour le management</span>
+                  <span className="text-sm text-gray-700">KPI-Dashboards pour le Management</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
@@ -333,7 +332,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span className="text-sm text-gray-700">Export & fonctions de reporting</span>
+                  <span className="text-sm text-gray-700">Fonctions d’exportation et de reporting</span>
                 </div>
               </div>
             </div>
@@ -343,11 +342,11 @@ export default function Home() {
               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <Users className="h-7 w-7 text-[#329AA1]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">Rôles & permissions</h3>
+              <h3 className="text-xl font-bold text-gray-900">Rôles & droits d’accès</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span className="text-sm text-gray-700">Définitions de rôles flexibles</span>
+                  <span className="text-sm text-gray-700">Définition flexible des rôles</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
@@ -359,7 +358,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span className="text-sm text-gray-700">Contrôle d’accès granulaire</span>
+                  <span className="text-sm text-gray-700">Gestion granulaire des accès</span>
                 </div>
               </div>
             </div>
@@ -369,15 +368,15 @@ export default function Home() {
               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-sm">
                 <Shield className="h-7 w-7 text-[#329AA1]" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900">RGPD & hébergement en Suisse</h3>
+              <h3 className="text-xl font-bold text-gray-900">LPD/RGPD & Hosting en Suisse</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span className="text-sm text-gray-700">Centres de données suisses</span>
+                  <span className="text-sm text-gray-700">Data center situés en Suisse</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
-                  <span className="text-sm text-gray-700">Chiffrement de bout en bout</span>
+                  <span className="text-sm text-gray-700">End-to-end encryption</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
@@ -398,10 +397,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
-            <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Modules & domaines</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Trois domaines — une plateforme</h2>
+            <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Modules & domaines de compétence</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Trois domaines clés – une seule plateforme</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Des dommages véhicules aux expertises immobilières jusqu’à l’investigation de fraude : Claimity couvre l’ensemble.
+              Des dommages automobiles aux expertises immobilières en passant par la détection de fraud : Claimity couvre l’ensemble des domaines.
             </p>
           </div>
 
@@ -423,8 +422,8 @@ export default function Home() {
               <div className="p-8 flex flex-col flex-1">
                 <div className="space-y-6 flex-1">
                   <div className="space-y-3">
-                    <h3 className="text-xl font-bold text-gray-900">Expertises véhicules</h3>
-                    <p className="text-sm text-gray-600">Rapports complets pour tous types de véhicules</p>
+                    <h3 className="text-xl font-bold text-gray-900">Expertises automobiles</h3>
+                    <p className="text-sm text-gray-600">Expertises complètes pour tous types de véhicules</p>
                   </div>
 
                   {/* Checkmark List */}
@@ -432,13 +431,13 @@ export default function Home() {
                     <div className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-gray-700">
-                        Expertises standard avec calculs détaillés
+                        Rapports d’expertise standard avec calcul détaillé des dommages
                       </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-gray-700">
-                        Expertises courtes et en direct pour des décisions rapides
+                        Expertises rapides ou en direct pour des décisions immédiates
                       </span>
                     </div>
                     <div className="flex items-start gap-3">
@@ -462,7 +461,7 @@ export default function Home() {
               <div className="relative h-48 sm:h-56 md:h-64 w-full">
                 <Image
                   src="/assets/brick-residential-house-building.jpg"
-                  alt="Experts immobiliers"
+                  alt="Experts immobilier"
                   fill
                   className="object-cover"
                 />
@@ -472,25 +471,25 @@ export default function Home() {
               <div className="p-8 flex flex-col flex-1">
                 <div className="space-y-6 flex-1">
                   <div className="space-y-3">
-                    <h3 className="text-xl font-bold text-gray-900">Experts immobiliers</h3>
-                    <p className="text-sm text-gray-600">Évaluations professionnelles des dommages aux bâtiments et ménages</p>
+                    <h3 className="text-xl font-bold text-gray-900">Experts immobilier</h3>
+                    <p className="text-sm text-gray-600">Évaluations professionnelles des dommages aux bâtiments et aux biens mobiliers</p>
                   </div>
 
                   {/* Checkmark List */}
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-700">Dommages aux bâtiments : feu, eau, tempête, séisme</span>
+                      <span className="text-sm text-gray-700">Dommages aux bâtiments : incendie, eau, tempête, tremblement de terre</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-gray-700">
-                        Génie civil : fondations, canalisations, infrastructure
+                        Dommages au génie civil : fondations, canalisations, infrastructures
                       </span>
                     </div>
                     <div className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-700">Dommages au ménage : inventaire, ameublement, objets de valeur</span>
+                      <span className="text-sm text-gray-700">Dommages aux biens : inventaire, aménagement, objets de valeur</span>
                     </div>
                   </div>
                 </div>
@@ -509,7 +508,7 @@ export default function Home() {
               <div className="relative h-48 sm:h-56 md:h-64 w-full">
                 <Image
                   src="/assets/person-working-on-laptop-with-documents-profession.jpg"
-                  alt="Investigation de fraude"
+                  alt="Enquêtes sur les fraudes"
                   fill
                   className="object-cover"
                 />
@@ -519,15 +518,15 @@ export default function Home() {
               <div className="p-8 flex flex-col flex-1">
                 <div className="space-y-6 flex-1">
                   <div className="space-y-3">
-                    <h3 className="text-xl font-bold text-gray-900">Investigation de fraude</h3>
-                    <p className="text-sm text-gray-600">Éclaircissement discret et professionnel des cas suspects</p>
+                    <h3 className="text-xl font-bold text-gray-900">Enquêtes sur les fraudes</h3>
+                    <p className="text-sm text-gray-600">Enquêtes discrètes et professionnelles en cas de suspicion</p>
                   </div>
 
                   {/* Checkmark List */}
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-sm text-gray-700">Analyse des schémas de dommages suspects</span>
+                      <span className="text-sm text-gray-700">Vérification des cas suspects présentant des schémas de dommages inhabituels</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" />
@@ -536,7 +535,7 @@ export default function Home() {
                     <div className="flex items-start gap-3">
                       <Check className="h-5 w-5 text-teal-600 flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-gray-700">
-                        Rapports d’enquête complets avec recommandations
+                        Rapports d’enquête complets avec recommandations d’action
                       </span>
                     </div>
                   </div>
@@ -561,9 +560,9 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <p className="text-sm font-semibold text-teal-400 tracking-wide uppercase">Intégration digitale</p>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Intégration simplifiée</h2>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Une intégration simplifiée</h2>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Claimity s’intègre de manière fluide dans votre paysage IT existant — sans migration complexe.
+                  Claimity s’intègre parfaitement dans votre environnement informatique existant – sans migration complexe.
                 </p>
               </div>
 
@@ -575,7 +574,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-base text-white">Hébergement suisse</span>
+                  <span className="text-base text-white">Hosting en suisse</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Check className="h-5 w-5 text-teal-400 flex-shrink-0" />
@@ -585,7 +584,7 @@ export default function Home() {
 
               <Link href="/fr/contact">
                 <Button className="bg-white hover:bg-gray-100 text-gray-900 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
-                  Planifier un appel technique
+                  Planifier un entretien technique
                 </Button>
               </Link>
             </div>
@@ -600,7 +599,7 @@ export default function Home() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold text-white">Intégration API</h3>
                   <p className="text-base text-gray-300 leading-relaxed">
-                    API REST pour une intégration simple avec les SI d’assurance et systèmes centraux
+                    API RESTful pour une connexion simple avec les logiciels d’assurance et de gestion des dossiers.
                   </p>
                 </div>
               </div>
@@ -614,9 +613,9 @@ export default function Home() {
                   <ArrowRight className="h-6 w-6 text-teal-400 rotate-90" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">Transfert de données sécurisé</h3>
+                  <h3 className="text-xl font-bold text-white">Transmission sécurisée des données</h3>
                   <p className="text-base text-gray-300 leading-relaxed">
-                    TLS 1.3, chiffrement de bout en bout, centres de données suisses
+                    TLS 1.3, end-to-end encryption, data center situés en Suisse.
                   </p>
                 </div>
               </div>
@@ -632,7 +631,7 @@ export default function Home() {
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold text-white">Workflows personnalisables</h3>
                   <p className="text-base text-gray-300 leading-relaxed">
-                    Logique d’attribution selon la région, la spécialité et la priorité
+                    Logique d’attribution configurable selon la région, le domaine d’expertise et la priorité.
                   </p>
                 </div>
               </div>
@@ -646,9 +645,9 @@ export default function Home() {
                   <Shield className="h-6 w-6 text-teal-400" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">Architecture Zero‑Trust</h3>
+                  <h3 className="text-xl font-bold text-white">Zero-Trust Ready</h3>
                   <p className="text-base text-gray-300 leading-relaxed">
-                    Architecture de sécurité moderne répondant aux exigences de conformité les plus élevées
+                    Architecture de sécurité moderne répondant aux plus hautes exigences de conformité.
                   </p>
                 </div>
               </div>
@@ -666,14 +665,14 @@ export default function Home() {
             <div className="space-y-4">
               <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Comment ça fonctionne</p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Quatre étapes vers une gestion digitale des sinistres
+                Quatre étapes vers une gestion des sinistres numérique
               </h2>
             </div>
 
             {/* Right - Description & CTA */}
             <div className="space-y-6">
               <p className="text-lg text-gray-600 leading-relaxed">
-                De la déclaration au règlement — entièrement automatisé et transparent.
+                De la déclaration à la facturation – entièrement automatisé et transparent.
               </p>
               <Link href="/fr/contact">
                 <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg">
@@ -696,9 +695,9 @@ export default function Home() {
                   <span className="text-2xl font-bold text-white">1</span>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900">Déclarer le sinistre</h3>
+                  <h3 className="text-xl font-bold text-gray-900">Déclaration du sinistre</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    Téléversement via portail, intégration API ou e‑mail — flexible et simple
+                    Upload via portail, intégration API ou e-mail – flexible et simple.
                   </p>
                 </div>
               </div>
@@ -711,7 +710,7 @@ export default function Home() {
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-gray-900">Attribution automatique</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    Sélection de l’expert selon la disponibilité, la spécialité et la région
+                    Le système sélectionne l’expert approprié selon la disponibilité, le domaine et la région.
                   </p>
                 </div>
               </div>
@@ -724,7 +723,7 @@ export default function Home() {
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-gray-900">Traitement & rapport</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    Rapport standardisé — central, digital, traçable
+                    L’expert établit un rapport standardisé – centralisé, numérique et conforme aux exigences d’audit.
                   </p>
                 </div>
               </div>
@@ -735,9 +734,9 @@ export default function Home() {
                   <span className="text-2xl font-bold text-white">4</span>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900">Clôture & règlement</h3>
+                  <h3 className="text-xl font-bold text-gray-900">Clôture & facturation</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    Validation digitale, facturation automatique, documentation complète
+                    Validation digitale, facturation automatique et documentation complète.
                   </p>
                 </div>
               </div>
@@ -755,7 +754,7 @@ export default function Home() {
               <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Références</p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">La confiance par les résultats</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Découvrez comment Claimity accompagne assureurs et prestataires dans la digitalisation.
+                Découvrez comment Claimity aide les compagnies d’assurance et les prestataires de services à réussir leur transformation numérique.
               </p>
             </div>
 
@@ -845,9 +844,9 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
             <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Questions fréquentes</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Tout ce qu’il faut savoir</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Tout ce que vous devez savoir</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Les réponses aux questions essentielles sur Claimity, la protection des données et l’intégration.
+              Réponses aux questions les plus importantes sur Claimity, la protection des données et l’intégration.
             </p>
           </div>
 
@@ -859,20 +858,17 @@ export default function Home() {
                 Où sont stockées nos données ?
               </AccordionTrigger>
               <AccordionContent className="text-base text-gray-700 leading-relaxed pb-6">
-                Toutes les données sont stockées exclusivement dans des centres de données suisses. L’architecture de la
-                plateforme est conforme aux exigences FINMA. Nous garantissons la conformité au droit suisse (LPD)
-                et au RGPD.
+                Toutes les données sont hébergées exclusivement dans des centres de données situés en Suisse. L’architecture de la plateforme est conforme aux exigences de la FINMA. Nous garantissons une conformité totale avec la Loi suisse sur la protection des données (LPD) et le RGPD de l’Union européenne.
               </AccordionContent>
             </AccordionItem>
 
             {/* Question 2 */}
             <AccordionItem value="item-2" className="border-b border-gray-200">
               <AccordionTrigger className="text-left text-lg font-bold text-gray-900 py-6 hover:no-underline">
-                Comment fonctionne l’intégration à nos systèmes ?
+                Comment fonctionne l’intégration avec nos systèmes existants ?
               </AccordionTrigger>
               <AccordionContent className="text-base text-gray-700 leading-relaxed pb-6">
-                Nous proposons une API REST permettant de connecter simplement vos systèmes à la plateforme Claimity.
-                Sur demande, nous pouvons développer une intégration sur mesure ou vous assister lors de l’implémentation.
+                Nous mettons à disposition une interface API REST permettant de connecter facilement vos systèmes à la plateforme Claimity. Sur demande, nous pouvons développer une interface personnalisée ou vous accompagner durant l’intégration.
               </AccordionContent>
             </AccordionItem>
 
@@ -882,41 +878,37 @@ export default function Home() {
                 Combien de temps dure l’onboarding ?
               </AccordionTrigger>
               <AccordionContent className="text-base text-gray-700 leading-relaxed pb-6">
-                Vous pouvez démarrer immédiatement, sous 24 heures. Pour une personnalisation du processus,
-                l’onboarding prend généralement 2 semaines.
+                Vous pouvez commencer immédiatement — sous 24 heures. Si vous souhaitez une configuration personnalisée, la phase d’onboarding dure généralement deux semaines.
               </AccordionContent>
             </AccordionItem>
 
             {/* Question 4 */}
             <AccordionItem value="item-4" className="border-b border-gray-200">
               <AccordionTrigger className="text-left text-lg font-bold text-gray-900 py-6 hover:no-underline">
-                Quels SLA proposez‑vous ?
+                Quels SLA proposez-vous ?
               </AccordionTrigger>
               <AccordionContent className="text-base text-gray-700 leading-relaxed pb-6">
-                Nous proposons des accords de niveau de service fiables, adaptés à vos besoins spécifiques. Des SLA
-                individuels peuvent être conclus contractuellement.
+                Nous offrons des accords de niveau de service (SLA) fiables, adaptables à vos besoins spécifiques. Des SLA personnalisés peuvent être définis contractuellement.
               </AccordionContent>
             </AccordionItem>
 
             {/* Question 5 */}
             <AccordionItem value="item-5" className="border-b border-gray-200">
               <AccordionTrigger className="text-left text-lg font-bold text-gray-900 py-6 hover:no-underline">
-                Comment assurez‑vous la qualité des experts ?
+                Comment garantissez-vous la qualité des experts ?
               </AccordionTrigger>
               <AccordionContent className="text-base text-gray-700 leading-relaxed pb-6">
-                Tous les experts suivent un processus de certification en plusieurs étapes. Nous vérifions les
-                qualifications, les assurances et réalisons des contrôles qualité réguliers.
+                Tous nos experts suivent un processus de certification en plusieurs étapes. Nous vérifions leurs qualifications, leurs assurances et réalisons des contrôles qualité réguliers.
               </AccordionContent>
             </AccordionItem>
 
             {/* Question 6 */}
             <AccordionItem value="item-6" className="border-b border-gray-200">
               <AccordionTrigger className="text-left text-lg font-bold text-gray-900 py-6 hover:no-underline">
-                Existe‑t‑il des durées contractuelles ?
+                Existe-t-il une durée contractuelle minimale ?
               </AccordionTrigger>
               <AccordionContent className="text-base text-gray-700 leading-relaxed pb-6">
-                Nous offrons une flexibilité totale : nos contrats sont résiliables mensuellement, vous gardez ainsi le
-                contrôle sur votre collaboration avec Claimity.
+                Nous offrons une flexibilité totale : nos contrats sont résiliables mensuellement, vous gardant ainsi un contrôle complet sur votre collaboration avec Claimity.
               </AccordionContent>
             </AccordionItem>
 
@@ -926,9 +918,7 @@ export default function Home() {
                 Comment fonctionne la facturation ?
               </AccordionTrigger>
               <AccordionContent className="text-base text-gray-700 leading-relaxed pb-6">
-                Notre tarification est transparente et sans frais cachés. Vous pouvez choisir entre une facturation
-                mensuelle ou au cas par cas. Tous les rapports de facturation sont disponibles à tout moment dans le
-                tableau de bord.
+                Notre tarification est transparente et sans frais cachés. Vous pouvez choisir entre une facturation mensuelle ou par dossier. Tous les rapports de facturation sont disponibles à tout moment dans le tableau de bord.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -943,7 +933,7 @@ export default function Home() {
               {/* Heading */}
               <div className="space-y-4">
                 <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight">
-                  Prêt pour une gestion des sinistres digitale ?
+                  Prêt pour la gestion digitale des sinistres ?
                 </h2>
                 <p className="text-lg text-white/90 max-w-3xl mx-auto">
                   Commencez dès aujourd’hui avec une démo sans engagement et découvrez comment Claimity transforme vos processus.
@@ -958,7 +948,7 @@ export default function Home() {
                 </Link>
                 <Link href="/fr/contact">
                   <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
-                    Nous contacter
+                    Prendre contact
                   </Button>
                 </Link>
               </div>
