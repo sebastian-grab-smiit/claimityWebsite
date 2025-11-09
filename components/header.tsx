@@ -61,7 +61,8 @@ export function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+    <>
+      <header className="fixed top-0 inset-x-0 md:sticky md:top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href={homeHref} aria-label="Claimity home" className="flex items-center gap-3">
@@ -138,5 +139,7 @@ export function Header() {
         </div>
       </div>
     </header>
+    <div className="h-16 md:hidden" aria-hidden="true" />
+    </>
   )
 }
