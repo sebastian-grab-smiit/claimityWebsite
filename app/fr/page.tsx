@@ -234,30 +234,25 @@ export default function Home() {
       </section>
 
       {/* Statistics Section */}
-      <section className="bg-[#1a1f2e] py-12 md:py-20 lg:py-24">
+      {/* <section className="bg-[#1a1f2e] py-12 md:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-white">La valeur ajoutée en chiffres</h2>
               <p className="text-lg text-gray-300">Des résultats mesurables grâce à la transformation numérique</p>
             </div>
 
-            {/* Right Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              {/* Stat 1 */}
               <div className="space-y-2">
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">30%</div>
                 <p className="text-sm text-gray-300">de réduction de la charge administrative</p>
               </div>
 
-              {/* Stat 2 */}
               <div className="space-y-2">
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">24h</div>
                 <p className="text-sm text-gray-300">de délai de réaction</p>
               </div>
 
-              {/* Stat 3 */}
               <div className="space-y-2">
                 <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">100%</div>
                 <p className="text-sm text-gray-300">d’intégration numérique</p>
@@ -265,7 +260,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Core Functions Section */}
       <section id="features" className="bg-white py-12 md:py-20 lg:py-32">
@@ -397,8 +392,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
-            <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Modules & domaines de compétence</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Trois domaines clés – une seule plateforme</h2>
+            <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Domaines de compétence</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Trois services – une seule plateforme</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Des dommages automobiles aux expertises immobilières en passant par la détection de fraud : Claimity couvre l’ensemble des domaines.
             </p>
@@ -674,11 +669,6 @@ export default function Home() {
               <p className="text-lg text-gray-600 leading-relaxed">
                 De la déclaration à la facturation – entièrement automatisé et transparent.
               </p>
-              <Link href="/fr/contact">
-                <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg">
-                  Commencer maintenant
-                </Button>
-              </Link>
             </div>
           </div>
 
@@ -746,9 +736,8 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section - Références */}
-      <section id="references" className="bg-gray-50 py-12 md:py-20 lg:py-32">
+      {/* <section id="references" className="bg-gray-50 py-12 md:py-20 lg:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          {/* Section Header */}
           <div className="flex flex-col md:flex-row items-start justify-between gap-6 md:gap-0 mb-16">
             <div className="space-y-4 max-w-2xl">
               <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Références</p>
@@ -758,8 +747,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Navigation Arrows (static placeholder) */}
-            {/* <div className="flex gap-3">
+            <div className="flex gap-3">
               <button
                 className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-teal-600 hover:text-teal-600 transition-colors"
                 aria-label="Précédent"
@@ -772,12 +760,10 @@ export default function Home() {
               >
                 <ChevronRight className="h-5 w-5" />
               </button>
-            </div> */}
+            </div>
           </div>
 
-          {/* Testimonial Cards */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Testimonial 1 */}
             <div className="bg-white rounded-2xl p-8 space-y-6 shadow-sm">
               <p className="text-base text-gray-900 leading-relaxed">
                 « Avec Claimity, nous avons réduit notre temps de traitement de 40%. L’attribution automatique et la
@@ -795,7 +781,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Testimonial 2 */}
             <div className="bg-white rounded-2xl p-8 space-y-6 shadow-sm">
               <p className="text-base text-gray-900 leading-relaxed">
                 « Grâce à Claimity, nous recevons un flux continu de demandes d’expertise de nombreuses assurances.
@@ -818,7 +803,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Testimonial 3 */}
             <div className="bg-white rounded-2xl p-8 space-y-6 shadow-sm">
               <p className="text-base text-gray-900 leading-relaxed">
                 « Lorem ipsum dolor sit amet consectetur. At in scelerisque nunc velit at amet quam elit egestas. »
@@ -836,7 +820,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section id="faq" className="bg-white py-12 md:py-20 lg:py-32">

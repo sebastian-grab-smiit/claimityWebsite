@@ -182,11 +182,11 @@ export function Footer() {
                   {L.why}
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href={referencesHref} className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   {L.references}
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href={faqHref} className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                   {L.faq}
