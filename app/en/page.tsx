@@ -68,7 +68,7 @@ export default function Home() {
                   Where Claims Find Clarity
                 </p>
 
-                <h1 className="text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight lg:pr-8">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight lg:pr-8">
                   Claims management.
                   <br />
                   Digital. Efficient.
@@ -82,14 +82,14 @@ export default function Home() {
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
                 <Link href="/en/#book">
-                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-base rounded-lg">
+                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg">
                     Request a demo
                   </Button>
                 </Link>
                 <Link href="/en/contact">
                   <Button
                     variant="outline"
-                    className="border-gray-300 text-gray-900 hover:bg-gray-50 px-8 py-6 text-base rounded-lg flex items-center gap-2 bg-transparent"
+                    className="border-gray-300 text-gray-900 hover:bg-gray-50 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg flex items-center gap-2 bg-transparent"
                   >
                     Contact us
                     <ArrowRight className="h-4 w-4" />
@@ -134,7 +134,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
             <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Why Claimity</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">From manual to digital</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">From manual to digital</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Traditional claims handling costs time and money. Claimity digitizes the process.
             </p>
@@ -247,19 +247,19 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {/* Stat 1 */}
               <div className="space-y-2">
-                <div className="text-5xl lg:text-6xl font-bold text-white">30%</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">30%</div>
                 <p className="text-sm text-gray-300">Less admin effort</p>
               </div>
 
               {/* Stat 2 */}
               <div className="space-y-2">
-                <div className="text-5xl lg:text-6xl font-bold text-white">24h</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">24h</div>
                 <p className="text-sm text-gray-300">Response time</p>
               </div>
 
               {/* Stat 3 */}
               <div className="space-y-2">
-                <div className="text-5xl lg:text-6xl font-bold text-white">100%</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">100%</div>
                 <p className="text-sm text-gray-300">Digital integration</p>
               </div>
             </div>
@@ -273,7 +273,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
             <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Core functions</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
               Everything you need for efficient
               <br />
               claims management
@@ -291,7 +291,7 @@ export default function Home() {
                 <Zap className="h-7 w-7 text-[#329AA1]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900">Automated expert assignment</h3>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
                   <span className="text-sm text-gray-700">No more manual search</span>
@@ -317,7 +317,7 @@ export default function Home() {
                 <BarChart3 className="h-7 w-7 text-[#329AA1]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900">Real-time status & dashboard</h3>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
                   <span className="text-sm text-gray-700">Live tracking of all cases</span>
@@ -343,7 +343,7 @@ export default function Home() {
                 <Users className="h-7 w-7 text-[#329AA1]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900">Roles & permissions</h3>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
                   <span className="text-sm text-gray-700">Flexible role definitions</span>
@@ -369,7 +369,7 @@ export default function Home() {
                 <Shield className="h-7 w-7 text-[#329AA1]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900">GDPR & Swiss hosting</h3>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
                   <span className="text-sm text-gray-700">Swiss data centers</span>
@@ -398,7 +398,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
             <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Modules & service areas</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Three core areas — one platform</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Three core areas — one platform</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               From vehicle damage to building assessments to fraud investigation: Claimity covers them all.
             </p>
@@ -409,7 +409,7 @@ export default function Home() {
             {/* Card 1 - Vehicle assessments */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
               {/* Image */}
-              <div className="relative h-64 w-full">
+              <div className="relative h-48 sm:h-56 md:h-64 w-full">
                 <Image
                   src="/assets/car-accident-damaged-vehicles.jpg"
                   alt="Vehicle assessments"
@@ -458,7 +458,7 @@ export default function Home() {
             {/* Card 2 - Surveyors */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
               {/* Image */}
-              <div className="relative h-64 w-full">
+              <div className="relative h-48 sm:h-56 md:h-64 w-full">
                 <Image
                   src="/assets/brick-residential-house-building.jpg"
                   alt="Surveyors"
@@ -505,7 +505,7 @@ export default function Home() {
             {/* Card 3 - Fraud investigation */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
               {/* Image */}
-              <div className="relative h-64 w-full">
+              <div className="relative h-48 sm:h-56 md:h-64 w-full">
                 <Image
                   src="/assets/person-working-on-laptop-with-documents-profession.jpg"
                   alt="Fraud investigation"
@@ -560,7 +560,7 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <p className="text-sm font-semibold text-teal-400 tracking-wide uppercase">Digital integration</p>
-                <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">Integration made easy</h2>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Integration made easy</h2>
                 <p className="text-lg text-gray-300 leading-relaxed">
                   Claimity integrates seamlessly into your existing IT landscape — without complex migration.
                 </p>
@@ -583,7 +583,7 @@ export default function Home() {
               </div>
 
               <Link href="/en/contact">
-                <Button className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-6 text-base rounded-lg font-medium">
+                <Button className="bg-white hover:bg-gray-100 text-gray-900 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
                   Schedule a technical call
                 </Button>
               </Link>
@@ -664,7 +664,7 @@ export default function Home() {
             {/* Left - Heading */}
             <div className="space-y-4">
               <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">How it works</p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Four steps to digital claims management
               </h2>
             </div>
@@ -675,7 +675,7 @@ export default function Home() {
                 From notification to settlement — fully automated and transparent.
               </p>
               <Link href="/en/contact">
-                <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-base rounded-lg">
+                <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg">
                   Get started
                 </Button>
               </Link>
@@ -749,10 +749,10 @@ export default function Home() {
       <section id="references" className="bg-gray-50 py-12 md:py-20 lg:py-32">
         <div className="mx-auto max-w-7xl px-6">
           {/* Section Header */}
-          <div className="flex items-start justify-between mb-16">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-6 md:gap-0 mb-16">
             <div className="space-y-4 max-w-2xl">
               <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">References</p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Trust through results</h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Trust through results</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Learn how Claimity supports insurers and service providers in digitization.
               </p>
@@ -842,7 +842,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
             <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Frequently asked questions</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Everything you need to know</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Everything you need to know</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Answers to the most important questions about Claimity, data protection, and integration.
             </p>
@@ -940,12 +940,12 @@ export default function Home() {
 
               <div className="flex flex-wrap justify-center gap-4">
                 <Link href="/en/#book">
-                  <Button className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-6 text-base rounded-lg font-medium">
+                  <Button className="bg-white hover:bg-gray-100 text-gray-900 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
                     Request a demo
                   </Button>
                 </Link>
                 <Link href="/en/contact">
-                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-base rounded-lg font-medium">
+                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
                     Contact us
                   </Button>
                 </Link>

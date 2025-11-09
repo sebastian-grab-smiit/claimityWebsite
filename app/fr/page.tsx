@@ -68,7 +68,7 @@ export default function Home() {
                   La clarté pour chaque sinistre
                 </p>
 
-                <h1 className="text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight lg:pr-8">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight lg:pr-8">
                   Gestion des sinistres.
                   <br />
                   Digitale. Efficace.
@@ -83,14 +83,14 @@ export default function Home() {
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
                 <Link href="/fr/#book">
-                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-base rounded-lg">
+                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg">
                     Demander une démo
                   </Button>
                 </Link>
                 <Link href="/fr/contact">
                   <Button
                     variant="outline"
-                    className="border-gray-300 text-gray-900 hover:bg-gray-50 px-8 py-6 text-base rounded-lg flex items-center gap-2 bg-transparent"
+                    className="border-gray-300 text-gray-900 hover:bg-gray-50 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg flex items-center gap-2 bg-transparent"
                   >
                     Nous contacter
                     <ArrowRight className="h-4 w-4" />
@@ -135,7 +135,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
             <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Pourquoi Claimity</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Du manuel au digital</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Du manuel au digital</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Le traitement traditionnel des sinistres coûte du temps et de l’argent. Claimity numérise le processus.
             </p>
@@ -248,19 +248,19 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               {/* Stat 1 */}
               <div className="space-y-2">
-                <div className="text-5xl lg:text-6xl font-bold text-white">30%</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">30%</div>
                 <p className="text-sm text-gray-300">Moins de tâches administratives</p>
               </div>
 
               {/* Stat 2 */}
               <div className="space-y-2">
-                <div className="text-5xl lg:text-6xl font-bold text-white">24h</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">24h</div>
                 <p className="text-sm text-gray-300">Délai de réaction</p>
               </div>
 
               {/* Stat 3 */}
               <div className="space-y-2">
-                <div className="text-5xl lg:text-6xl font-bold text-white">100%</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">100%</div>
                 <p className="text-sm text-gray-300">Intégration digitale</p>
               </div>
             </div>
@@ -274,7 +274,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
             <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Fonctionnalités clés</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
               Tout ce dont vous avez besoin pour une
               <br />
               gestion des sinistres efficace
@@ -292,7 +292,7 @@ export default function Home() {
                 <Zap className="h-7 w-7 text-[#329AA1]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900">Attribution automatisée des experts</h3>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
                   <span className="text-sm text-gray-700">Plus de recherche manuelle</span>
@@ -318,7 +318,7 @@ export default function Home() {
                 <BarChart3 className="h-7 w-7 text-[#329AA1]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900">Statut en temps réel & tableau de bord</h3>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
                   <span className="text-sm text-gray-700">Suivi en direct de tous les dossiers</span>
@@ -344,7 +344,7 @@ export default function Home() {
                 <Users className="h-7 w-7 text-[#329AA1]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900">Rôles & permissions</h3>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
                   <span className="text-sm text-gray-700">Définitions de rôles flexibles</span>
@@ -370,7 +370,7 @@ export default function Home() {
                 <Shield className="h-7 w-7 text-[#329AA1]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900">RGPD & hébergement en Suisse</h3>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">•</span>
                   <span className="text-sm text-gray-700">Centres de données suisses</span>
@@ -399,7 +399,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
             <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Modules & domaines</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Trois domaines — une plateforme</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Trois domaines — une plateforme</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Des dommages véhicules aux expertises immobilières jusqu’à l’investigation de fraude : Claimity couvre l’ensemble.
             </p>
@@ -410,7 +410,7 @@ export default function Home() {
             {/* Card 1 - Vehicle assessments */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
               {/* Image */}
-              <div className="relative h-64 w-full">
+              <div className="relative h-48 sm:h-56 md:h-64 w-full">
                 <Image
                   src="/assets/car-accident-damaged-vehicles.jpg"
                   alt="Expertises véhicules"
@@ -459,7 +459,7 @@ export default function Home() {
             {/* Card 2 - Surveyors */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
               {/* Image */}
-              <div className="relative h-64 w-full">
+              <div className="relative h-48 sm:h-56 md:h-64 w-full">
                 <Image
                   src="/assets/brick-residential-house-building.jpg"
                   alt="Experts immobiliers"
@@ -506,7 +506,7 @@ export default function Home() {
             {/* Card 3 - Fraud investigation */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
               {/* Image */}
-              <div className="relative h-64 w-full">
+              <div className="relative h-48 sm:h-56 md:h-64 w-full">
                 <Image
                   src="/assets/person-working-on-laptop-with-documents-profession.jpg"
                   alt="Investigation de fraude"
@@ -561,7 +561,7 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <p className="text-sm font-semibold text-teal-400 tracking-wide uppercase">Intégration digitale</p>
-                <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">Intégration simplifiée</h2>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Intégration simplifiée</h2>
                 <p className="text-lg text-gray-300 leading-relaxed">
                   Claimity s’intègre de manière fluide dans votre paysage IT existant — sans migration complexe.
                 </p>
@@ -584,7 +584,7 @@ export default function Home() {
               </div>
 
               <Link href="/fr/contact">
-                <Button className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-6 text-base rounded-lg font-medium">
+                <Button className="bg-white hover:bg-gray-100 text-gray-900 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
                   Planifier un appel technique
                 </Button>
               </Link>
@@ -665,7 +665,7 @@ export default function Home() {
             {/* Left - Heading */}
             <div className="space-y-4">
               <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Comment ça fonctionne</p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Quatre étapes vers une gestion digitale des sinistres
               </h2>
             </div>
@@ -676,7 +676,7 @@ export default function Home() {
                 De la déclaration au règlement — entièrement automatisé et transparent.
               </p>
               <Link href="/fr/contact">
-                <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-base rounded-lg">
+                <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg">
                   Commencer maintenant
                 </Button>
               </Link>
@@ -750,10 +750,10 @@ export default function Home() {
       <section id="references" className="bg-gray-50 py-12 md:py-20 lg:py-32">
         <div className="mx-auto max-w-7xl px-6">
           {/* Section Header */}
-          <div className="flex items-start justify-between mb-16">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-6 md:gap-0 mb-16">
             <div className="space-y-4 max-w-2xl">
               <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Références</p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">La confiance par les résultats</h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">La confiance par les résultats</h2>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Découvrez comment Claimity accompagne assureurs et prestataires dans la digitalisation.
               </p>
@@ -845,7 +845,7 @@ export default function Home() {
           {/* Section Header */}
           <div className="text-center mb-10 md:mb-16 space-y-4">
             <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Questions fréquentes</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Tout ce qu’il faut savoir</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">Tout ce qu’il faut savoir</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Les réponses aux questions essentielles sur Claimity, la protection des données et l’intégration.
             </p>
@@ -952,12 +952,12 @@ export default function Home() {
 
               <div className="flex flex-wrap justify-center gap-4">
                 <Link href="/fr/#book">
-                  <Button className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-6 text-base rounded-lg font-medium">
+                  <Button className="bg-white hover:bg-gray-100 text-gray-900 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
                     Demander une démo
                   </Button>
                 </Link>
                 <Link href="/fr/contact">
-                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-base rounded-lg font-medium">
+                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
                     Nous contacter
                   </Button>
                 </Link>
