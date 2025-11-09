@@ -62,6 +62,7 @@ export function Header() {
 
   return (
     <>
+      {/* Mobile: fixed; ab md: sticky */}
       <header className="fixed top-0 inset-x-0 md:sticky md:top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
@@ -139,6 +140,7 @@ export function Header() {
         </div>
       </div>
     </header>
+    {/* Spacer nur auf Mobile, um den fixed Header auszugleichen */}
     <div className="h-16 md:hidden" aria-hidden="true" />
     </>
   )
