@@ -7,39 +7,96 @@ import { Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   const pathname = usePathname() || "/"
-  const lang = pathname.startsWith("/en") ? "en" : "de"
+  const lang = pathname.startsWith("/en") ? "en" : pathname.startsWith("/fr") ? "fr" : "de"
   const base = `/${lang}`
 
-  const L = {
-    product: lang === "de" ? "Produkt" : "Product",
-    company: lang === "de" ? "Unternehmen" : "Company",
-    contactSection: lang === "de" ? "Kontakt" : "Contact",
-    functions: lang === "de" ? "Funktionen" : "Features",
-    modules: lang === "de" ? "Module" : "Modules",
-    integration: lang === "de" ? "Integration" : "Integration",
-    process: lang === "de" ? "Prozess" : "Process",
-    why: lang === "de" ? "Warum Claimity" : "Why Claimity",
-    references: lang === "de" ? "Referenzen" : "References",
-    faq: "FAQ",
-    contact: lang === "de" ? "Kontakt" : "Contact",
-    emailLabel: lang === "de" ? "E‑Mail:" : "Email:",
-    phoneLabel: lang === "de" ? "Telefon:" : "Phone:",
-    rights: lang === "de" ? "Alle Rechte vorbehalten." : "All rights reserved.",
-    privacy: lang === "de" ? "Datenschutzerklärung" : "Privacy Policy",
-    terms: lang === "de" ? "Nutzungsbedingungen" : "Terms of Service",
-    imprint: lang === "de" ? "Impressum" : "Legal Notice",
-    companyName: "Claimity AG",
-    street: "Wisentalstrasse 7a",
-    city: "8185 Winkel",
-    country: lang === "de" ? "Schweiz" : "Switzerland",
-    companyBlurb:
-      lang === "de"
-        ? "Die digitale Plattform für effizientes Schadenmanagement. Automatisiert, transparent, sicher."
-        : "The digital platform for efficient claims management. Automated, transparent, secure.",
-    emailValue: "info@claimity.ch",
-    phoneValue: "+41 78 344 77 36",
-    phoneHref: "tel:+41783447736",
-  }
+  const L =
+    lang === "de"
+      ? {
+          product: "Produkt",
+          company: "Unternehmen",
+          contactSection: "Kontakt",
+          functions: "Funktionen",
+          modules: "Module",
+          integration: "Integration",
+          process: "Prozess",
+          why: "Warum Claimity",
+          references: "Referenzen",
+          faq: "FAQ",
+          contact: "Kontakt",
+          emailLabel: "E‑Mail:",
+          phoneLabel: "Telefon:",
+          rights: "Alle Rechte vorbehalten.",
+          privacy: "Datenschutzerklärung",
+          terms: "Nutzungsbedingungen",
+          imprint: "Impressum",
+          companyName: "Claimity AG",
+          street: "Wisentalstrasse 7a",
+          city: "8185 Winkel",
+          country: "Schweiz",
+          companyBlurb:
+            "Die digitale Plattform für effizientes Schadenmanagement. Automatisiert, transparent, sicher.",
+          emailValue: "info@claimity.ch",
+          phoneValue: "+41 78 344 77 36",
+          phoneHref: "tel:+41783447736",
+        }
+      : lang === "en"
+      ? {
+          product: "Product",
+          company: "Company",
+          contactSection: "Contact",
+          functions: "Features",
+          modules: "Modules",
+          integration: "Integration",
+          process: "Process",
+          why: "Why Claimity",
+          references: "References",
+          faq: "FAQ",
+          contact: "Contact",
+          emailLabel: "Email:",
+          phoneLabel: "Phone:",
+          rights: "All rights reserved.",
+          privacy: "Privacy Policy",
+          terms: "Terms of Service",
+          imprint: "Legal Notice",
+          companyName: "Claimity AG",
+          street: "Wisentalstrasse 7a",
+          city: "8185 Winkel",
+          country: "Switzerland",
+          companyBlurb:
+            "The digital platform for efficient claims management. Automated, transparent, secure.",
+          emailValue: "info@claimity.ch",
+          phoneValue: "+41 78 344 77 36",
+          phoneHref: "tel:+41783447736",
+        }
+      : {
+          product: "Produit",
+          company: "Entreprise",
+          contactSection: "Contact",
+          functions: "Fonctionnalités",
+          modules: "Modules",
+          integration: "Intégration",
+          process: "Processus",
+          why: "Pourquoi Claimity",
+          references: "Références",
+          faq: "FAQ",
+          contact: "Contact",
+          emailLabel: "E‑mail:",
+          phoneLabel: "Téléphone:",
+          rights: "Tous droits réservés.",
+          privacy: "Politique de confidentialité",
+          terms: "Conditions d'utilisation",
+          imprint: "Mentions légales",
+          companyName: "Claimity AG",
+          street: "Wisentalstrasse 7a",
+          city: "8185 Winkel",
+          country: "Suisse",
+          companyBlurb:
+            "La plateforme numérique pour une gestion des sinistres efficace. Automatisée, transparente, sécurisée.",
+          emailValue: "info@claimity.ch",
+          phoneValue: "+41 78 344 77 36",
+          phoneHref: "tel:+41783447736",
+        }
 
   const homeHref = `${base}/`
   const contactHref = `${base}/contact`

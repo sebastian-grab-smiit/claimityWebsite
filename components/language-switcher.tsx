@@ -6,16 +6,19 @@ import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu"
 import ReactCountryFlag from "react-country-flag"
 
-type Lang = "de" | "en"
+type Lang = "de" | "en" | "fr"
 
 const languages: Array<{ code: Lang; label: string; country: string }> = [
   { code: "de", label: "Deutsch", country: "DE" },
   { code: "en", label: "English", country: "GB" },
+  { code: "fr", label: "Français", country: "FR" },
 ]
 
 function computeLangFromPath(pathname: string | null | undefined): Lang {
   if (!pathname) return "de"
-  return pathname.startsWith("/en") ? "en" : "de"
+  if (pathname.startsWith("/en")) return "en"
+  if (pathname.startsWith("/fr")) return "fr"
+  return "de"
 }
 
 function buildPathForLang(pathname: string, target: Lang): string {
@@ -28,6 +31,9 @@ function buildPathForLang(pathname: string, target: Lang): string {
   }
   if (pathname.startsWith("/en/") || pathname === "/en") {
     return pathname.replace(/^\/en(\/|$)/, `/${target}/`)
+  }
+  if (pathname.startsWith("/fr/") || pathname === "/fr") {
+    return pathname.replace(/^\/fr(\/|$)/, `/${target}/`)
   }
 
   return `/${target}${pathname.endsWith("/") ? "" : "/"}`

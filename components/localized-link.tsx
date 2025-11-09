@@ -5,11 +5,13 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 // Inlined localization helpers (removed lib/i18n dependency)
-type Lang = "de" | "en"
+type Lang = "de" | "en" | "fr"
 
 function detectLangFromPath(pathname: string | null | undefined): Lang {
   if (!pathname) return "de"
-  return pathname.startsWith("/en") ? "en" : "de"
+  if (pathname.startsWith("/en")) return "en"
+  if (pathname.startsWith("/fr")) return "fr"
+  return "de"
 }
 
 /**
@@ -39,6 +41,9 @@ function buildLocalizedHref(currentPathname: string, href: string, target?: Lang
   }
   if (normalized.startsWith("/en/") || normalized === "/en") {
     return normalized.replace(/^\/en(\/|$)/, `/${currentLang}/`)
+  }
+  if (normalized.startsWith("/fr/") || normalized === "/fr") {
+    return normalized.replace(/^\/fr(\/|$)/, `/${currentLang}/`)
   }
 
   // Otherwise prefix with language (respect trailing slash)

@@ -10,18 +10,39 @@ import { LanguageSwitcher } from "@/components/language-switcher"
 
 export function Header() {
   const pathname = usePathname() || "/"
-  const lang = pathname.startsWith("/en") ? "en" : "de"
+  const lang = pathname.startsWith("/en") ? "en" : pathname.startsWith("/fr") ? "fr" : "de"
   const base = `/${lang}`
 
-  const L = {
-    why: lang === "de" ? "Warum Claimity" : "Why Claimity",
-    features: lang === "de" ? "Funktionen" : "Features",
-    modules: lang === "de" ? "Module" : "Modules",
-    book: lang === "de" ? "Termin buchen" : "Calendar Booking",
-    clientLogin: lang === "de" ? "Anmelden" : "Login",
-    contact: lang === "de" ? "Kontakt" : "Contact us",
-    navTitle: lang === "de" ? "Navigation" : "Navigation",
-  }
+  const L =
+    lang === "de"
+      ? {
+          why: "Warum Claimity",
+          features: "Funktionen",
+          modules: "Module",
+          book: "Termin buchen",
+          clientLogin: "Anmelden",
+          contact: "Kontakt",
+          navTitle: "Navigation",
+        }
+      : lang === "en"
+      ? {
+          why: "Why Claimity",
+          features: "Features",
+          modules: "Modules",
+          book: "Calendar Booking",
+          clientLogin: "Login",
+          contact: "Contact us",
+          navTitle: "Navigation",
+        }
+      : {
+          why: "Pourquoi Claimity",
+          features: "Fonctionnalités",
+          modules: "Modules",
+          book: "Réserver une démo",
+          clientLogin: "Connexion",
+          contact: "Contact",
+          navTitle: "Navigation",
+        }
 
   const homeHref = `${base}/`
   const whyHref = `${base}/#why`

@@ -12,6 +12,6 @@ export const metadata: Metadata = {
   },
 }
 
-export default function DELayout({ children }: { children: React.ReactNode }) {
+export default function ENLayout({ children }: { children: React.ReactNode }) {
   return children
 }

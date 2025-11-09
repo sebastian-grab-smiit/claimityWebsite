@@ -9,7 +9,8 @@ export function HtmlLangSetter() {
   useEffect(() => {
     if (typeof document === "undefined") return
     const isEN = pathname?.startsWith("/en")
-    document.documentElement.lang = isEN ? "en" : "de-CH"
+    const isFR = pathname?.startsWith("/fr")
+    document.documentElement.lang = isEN ? "en" : isFR ? "fr-CH" : "de-CH"
   }, [pathname])
 
   return null
