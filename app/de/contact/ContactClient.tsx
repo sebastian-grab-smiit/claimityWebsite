@@ -112,7 +112,7 @@ export default function ContactPageDEClient() {
 
                 <div className="flex items-start gap-4">
                   <div className="space-y-1">
-                    <h3 className="text-base font-bold text-gray-900">Möchten Sie sofort sprechen?</h3>
+                    <h3 className="text-base font-bold text-gray-900">Möchten Sie einen persönlichen Termin vereinbaren?</h3>
                     <a href="/de/contact/#book" className="text-base text-teal-600 hover:text-teal-700 transition-colors">
                       Termin buchen
                     </a>
