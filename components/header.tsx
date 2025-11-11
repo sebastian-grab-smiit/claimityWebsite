@@ -85,12 +85,14 @@ export function Header() {
 
         {/* CTAs + Language */}
         <div className="hidden md:flex items-center gap-4">
-            <Link href="https://app.claimity.ch" target="_blank" rel="noopener noreferrer" className="text-sm font-small text-gray-700 hover:text-gray-900 transition-colors mr-4">
+          <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white rounded-lg px-6">
+            <Link href="https://app.claimity.ch" target="_blank" rel="noopener noreferrer">
               {L.clientLogin}
             </Link>
-          <Button asChild className="bg-gray-900 text-white hover:bg-gray-800 rounded-lg px-6">
-            <Link href={contactHref}>{L.contact}</Link>
           </Button>
+          <Link href={contactHref} className="text-sm font-small text-gray-700 hover:text-gray-900 transition-colors mr-4">
+            {L.contact}
+          </Link>
           <LanguageSwitcher />
         </div>
 
@@ -123,12 +125,12 @@ export function Header() {
                 ))}
               </nav>
               <div className="mt-6 grid gap-2">
-                <Button asChild variant="outline" className="justify-start ml-4 mr-4">
+                <Button asChild className="justify-start bg-teal-600 hover:bg-teal-700 text-white ml-4 mr-4">
                   <Link href="https://app.claimity.ch" target="_blank" rel="noopener noreferrer">
                     {L.clientLogin}
                   </Link>
                 </Button>
-                <Button asChild className="justify-start bg-gray-900 text-white hover:bg-gray-800 ml-4 mr-4">
+                <Button asChild variant="outline" className="justify-start ml-4 mr-4">
                   <Link href={contactHref}>{L.contact}</Link>
                 </Button>
                 <div className="px-4">

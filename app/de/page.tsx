@@ -237,6 +237,94 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Process Section - So funktioniert's */}
+      <section id="process" className="bg-white py-12 md:py-20 lg:py-32">
+        <div className="mx-auto max-w-7xl px-6">
+          {/* Section Header */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start mb-6 md:mb-8">
+            {/* Left - Heading */}
+            <div className="space-y-4">
+              <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">So funktioniert&apos;s</p>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                Vier Schritte zum digitalen Schadenmanagement
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed mb-2">
+                Von der Meldung bis zur Abrechnung – vollständig automatisiert und transparent.
+              </p>
+            </div>
+
+            {/* Right - Carousel */}
+            <FeatureCarousel
+              images={[
+                { src: "/assets/de/new_claim.png", alt: "Automatische Zuweisung – neuer Schadenfall" },
+                { src: "/assets/de/claim.png", alt: "Schaden melden – Upload und Erfassung" },
+                { src: "/assets/de/report.png", alt: "Bericht und Abschluss – standardisierte Dokumente" },
+              ]}
+            />
+          </div>
+          {/* Process Steps */}
+          <div className="relative">
+            {/* Dashed Line */}
+            <div className="hidden lg:block absolute top-8 left-0 right-0 h-0.5 border-t-2 border-dashed border-gray-300"></div>
+
+            {/* Steps Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+              {/* Step 1 */}
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
+                  <span className="text-2xl font-bold text-white">1</span>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-gray-900">Schaden melden</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Upload via Portal, API-Integration oder E-Mail – flexibel und unkompliziert
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
+                  <span className="text-2xl font-bold text-white">2</span>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-gray-900">Automatische Zuweisung</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    System wählt passenden Experten nach Verfügbarkeit, Fachgebiet und Region
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
+                  <span className="text-2xl font-bold text-white">3</span>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-gray-900">Bearbeitung &amp; Bericht</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Experte erstellt standardisierten Bericht – zentral, digital, revisionssicher
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
+                  <span className="text-2xl font-bold text-white">4</span>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-gray-900">Abschluss &amp; Abrechnung</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Digitale Freigabe, automatische Abrechnung, vollständige Dokumentation
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Statistics Section */}
       {/* <section className="bg-[#1a1f2e] py-12 md:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-6">
@@ -442,7 +530,7 @@ export default function Home() {
                 </div>
 
                 <Link href="/de/#book">
-                  <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-6 rounded-lg mt-6">
+                  <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white py-6 rounded-lg mt-6">
                     Beratung anfragen
                   </Button>
                 </Link>
@@ -484,7 +572,7 @@ export default function Home() {
                 </div>
 
                 <Link href="/de/#book">
-                  <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-6 rounded-lg mt-6">
+                  <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white py-6 rounded-lg mt-6">
                     Beratung anfragen
                   </Button>
                 </Link>
@@ -526,7 +614,7 @@ export default function Home() {
                 </div>
 
                 <Link href="/de/#book">
-                  <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-6 rounded-lg mt-6">
+                  <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white py-6 rounded-lg mt-6">
                     Beratung anfragen
                   </Button>
                 </Link>
@@ -537,15 +625,15 @@ export default function Home() {
       </section>
 
       {/* Digital Integration Section */}
-      <section id="integration" className="bg-[#1a1f2e] py-12 md:py-20 lg:py-32">
+      <section id="integration" className="bg-white py-12 md:py-20 lg:py-32">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-start">
             {/* Left Column */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <p className="text-sm font-semibold text-teal-400 tracking-wide uppercase">Digitale Integration</p>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Integration leicht gemacht</h2>
-                <p className="text-lg text-gray-300 leading-relaxed">
+                <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Digitale Integration</p>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">Integration leicht gemacht</h2>
+                <p className="text-lg text-gray-600 leading-relaxed">
                   Claimity fügt sich nahtlos in Ihre bestehende IT-Landschaft ein – ohne aufwändige Migration.
                 </p>
               </div>
@@ -553,21 +641,21 @@ export default function Home() {
               {/* Checkmark List */}
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <Check className="h-5 w-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-base text-white">API-first</span>
+                  <Check className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                  <span className="text-base text-gray-900">API-first</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Check className="h-5 w-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-base text-white">Schweizer Hosting</span>
+                  <Check className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                  <span className="text-base text-gray-900">Schweizer Hosting</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Check className="h-5 w-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-base text-white">DSGVO-konform</span>
+                  <Check className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                  <span className="text-base text-gray-900">DSGVO-konform</span>
                 </div>
               </div>
 
               <Link href="/de/contact">
-                <Button className="bg-white hover:bg-gray-100 text-gray-900 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
+                <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
                   Technisches Gespräch vereinbaren
                 </Button>
               </Link>
@@ -581,15 +669,15 @@ export default function Home() {
                   <RefreshCw className="h-6 w-6 text-teal-400" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">API-Anbindung</h3>
-                  <p className="text-base text-gray-300 leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">API-Anbindung</h3>
+                  <p className="text-base text-gray-600 leading-relaxed">
                     RESTful API für einfache Anbindung an Versicherungs- und Bestandssoftware
                   </p>
                 </div>
               </div>
 
               {/* Divider */}
-              <div className="border-t border-gray-700"></div>
+              <div className="border-t border-gray-200"></div>
 
               {/* Feature 2 - Sichere Datenübertragung */}
               <div className="flex gap-6 items-start">
@@ -597,15 +685,15 @@ export default function Home() {
                   <ArrowRight className="h-6 w-6 text-teal-400 rotate-90" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">Sichere Datenübertragung</h3>
-                  <p className="text-base text-gray-300 leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">Sichere Datenübertragung</h3>
+                  <p className="text-base text-gray-600 leading-relaxed">
                     TLS 1.3, Ende-zu-Ende-Verschlüsselung, Schweizer Rechenzentren
                   </p>
                 </div>
               </div>
 
               {/* Divider */}
-              <div className="border-t border-gray-700"></div>
+              <div className="border-t border-gray-200"></div>
 
               {/* Feature 3 - Anpassbare Workflows */}
               <div className="flex gap-6 items-start">
@@ -613,15 +701,15 @@ export default function Home() {
                   <Settings className="h-6 w-6 text-teal-400" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">Anpassbare Workflows</h3>
-                  <p className="text-base text-gray-300 leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">Anpassbare Workflows</h3>
+                  <p className="text-base text-gray-600 leading-relaxed">
                     Individuelle Zuweisungslogik nach Region, Fachgebiet und Priorität
                   </p>
                 </div>
               </div>
 
               {/* Divider */}
-              <div className="border-t border-gray-700"></div>
+              <div className="border-t border-gray-200"></div>
 
               {/* Feature 4 - Zero-Trust Ready */}
               <div className="flex gap-6 items-start">
@@ -629,97 +717,9 @@ export default function Home() {
                   <Shield className="h-6 w-6 text-teal-400" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">Zero-Trust Ready</h3>
-                  <p className="text-base text-gray-300 leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">Zero-Trust Ready</h3>
+                  <p className="text-base text-gray-600 leading-relaxed">
                     Moderne Sicherheitsarchitektur für höchste Compliance-Anforderungen
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section - So funktioniert's */}
-      <section id="process" className="bg-white py-12 md:py-20 lg:py-32">
-        <div className="mx-auto max-w-7xl px-6">
-          {/* Section Header */}
-          <div className="grid lg:grid-cols-2 gap-12 items-start mb-6 md:mb-8">
-            {/* Left - Heading */}
-            <div className="space-y-4">
-              <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">So funktioniert&apos;s</p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Vier Schritte zum digitalen Schadenmanagement
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-2">
-                Von der Meldung bis zur Abrechnung – vollständig automatisiert und transparent.
-              </p>
-            </div>
-
-            {/* Right - Carousel */}
-            <FeatureCarousel
-              images={[
-                { src: "/assets/de/new_claim.png", alt: "Automatische Zuweisung – neuer Schadenfall" },
-                { src: "/assets/de/claim.png", alt: "Schaden melden – Upload und Erfassung" },
-                { src: "/assets/de/report.png", alt: "Bericht und Abschluss – standardisierte Dokumente" },
-              ]}
-            />
-          </div>
-          {/* Process Steps */}
-          <div className="relative">
-            {/* Dashed Line */}
-            <div className="hidden lg:block absolute top-8 left-0 right-0 h-0.5 border-t-2 border-dashed border-gray-300"></div>
-
-            {/* Steps Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-              {/* Step 1 */}
-              <div className="space-y-6">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
-                  <span className="text-2xl font-bold text-white">1</span>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900">Schaden melden</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    Upload via Portal, API-Integration oder E-Mail – flexibel und unkompliziert
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 2 */}
-              <div className="space-y-6">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
-                  <span className="text-2xl font-bold text-white">2</span>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900">Automatische Zuweisung</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    System wählt passenden Experten nach Verfügbarkeit, Fachgebiet und Region
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 3 */}
-              <div className="space-y-6">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
-                  <span className="text-2xl font-bold text-white">3</span>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900">Bearbeitung &amp; Bericht</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    Experte erstellt standardisierten Bericht – zentral, digital, revisionssicher
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 4 */}
-              <div className="space-y-6">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
-                  <span className="text-2xl font-bold text-white">4</span>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900">Abschluss &amp; Abrechnung</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    Digitale Freigabe, automatische Abrechnung, vollständige Dokumentation
                   </p>
                 </div>
               </div>
@@ -916,7 +916,40 @@ export default function Home() {
       {/* Final CTA Section */}
       <section className="bg-gray-50 py-12 md:py-20 lg:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="bg-[#194D50] rounded-3xl px-6 md:px-12 py-16 lg:py-20">
+          <div className="bg-white rounded-3xl px-6 md:px-12 py-16 lg:py-20 shadow-sm hover:shadow-md transition-shadow">
+            <div className="text-center space-y-8">
+              {/* Heading */}
+              <div className="space-y-4">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-700 leading-tight">
+                  Bereit für digitales Schadenmanagement?
+                </h2>
+                <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+                  Starten Sie noch heute mit einer unverbindlichen Demo und erleben Sie, wie Claimity Ihre Prozesse
+                  transformiert.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link href="/de/#book">
+                  <Button variant="outline" className="border-gray-300 text-gray-900 hover:bg-gray-50 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg flex items-center gap-2 bg-transparent">
+                    Demo anfordern
+                  </Button>
+                </Link>
+                <Link href="/de/contact">
+                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
+                    Kontakt aufnehmen
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="bg-white py-12 md:py-20 lg:py-32">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="bg-[#1a1f2e] rounded-3xl px-6 md:px-12 py-16 lg:py-20">
             <div className="text-center space-y-8">
               {/* Heading */}
               <div className="space-y-4">

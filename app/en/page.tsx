@@ -237,6 +237,95 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Process Section - How it works */}
+      <section id="process" className="bg-white py-12 md:py-20 lg:py-32">
+        <div className="mx-auto max-w-7xl px-6">
+          {/* Section Header */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start mb-6 md:mb-8">
+            {/* Left - Heading */}
+            <div className="space-y-4">
+              <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">How it works</p>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                Four steps to digital claims management
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed mb-2">
+                From notification to settlement — fully automated and transparent.
+              </p>
+            </div>
+
+            {/* Right - Carousel */}
+            <FeatureCarousel
+              images={[
+                { src: "/assets/en/new_claim.png", alt: "Automatic assignment – new claim" },
+                { src: "/assets/en/claim.png", alt: "Report damage – upload and recording" },
+                { src: "/assets/en/report.png", alt: "Report and closure – standardized documents" },
+              ]}
+            />
+          </div>
+
+          {/* Process Steps */}
+          <div className="relative">
+            {/* Dashed Line */}
+            <div className="hidden lg:block absolute top-8 left-0 right-0 h-0.5 border-t-2 border-dashed border-gray-300"></div>
+
+            {/* Steps Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+              {/* Step 1 */}
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
+                  <span className="text-2xl font-bold text-white">1</span>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-gray-900">Report a claim</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Upload via portal, API integration, or email — flexible and simple
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
+                  <span className="text-2xl font-bold text-white">2</span>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-gray-900">Automatic assignment</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    The system selects the best expert by availability, domain, and region
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
+                  <span className="text-2xl font-bold text-white">3</span>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-gray-900">Processing & report</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Expert produces a standardized report — central, digital, and auditable
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="space-y-6">
+                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
+                  <span className="text-2xl font-bold text-white">4</span>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold text-gray-900">Closure & settlement</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Digital approval, automatic settlement, complete documentation
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Statistics Section */}
       {/* <section className="bg-[#1a1f2e] py-12 md:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-6">
@@ -442,7 +531,7 @@ export default function Home() {
                 </div>
 
                 <Link href="/en/#book">
-                  <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-6 rounded-lg mt-6">
+                  <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white py-6 rounded-lg mt-6">
                     Request consultation
                   </Button>
                 </Link>
@@ -484,7 +573,7 @@ export default function Home() {
                 </div>
 
                 <Link href="/en/#book">
-                  <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-6 rounded-lg mt-6">
+                  <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white py-6 rounded-lg mt-6">
                     Request consultation
                   </Button>
                 </Link>
@@ -526,7 +615,7 @@ export default function Home() {
                 </div>
 
                 <Link href="/en/#book">
-                  <Button className="w-full bg-gray-900 hover:bg-gray-800 text-white py-6 rounded-lg mt-6">
+                  <Button className="w-full bg-teal-600 hover:bg-teal-700 text-white py-6 rounded-lg mt-6">
                     Request consultation
                   </Button>
                 </Link>
@@ -537,15 +626,15 @@ export default function Home() {
       </section>
 
       {/* Digital Integration Section */}
-      <section id="integration" className="bg-[#1a1f2e] py-12 md:py-20 lg:py-32">
+      <section id="integration" className="bg-white py-12 md:py-20 lg:py-32">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-start">
             {/* Left Column */}
             <div className="space-y-8">
               <div className="space-y-6">
-                <p className="text-sm font-semibold text-teal-400 tracking-wide uppercase">Digital integration</p>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">Integration made easy</h2>
-                <p className="text-lg text-gray-300 leading-relaxed">
+                <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">Digital integration</p>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">Integration made easy</h2>
+                <p className="text-lg text-gray-600 leading-relaxed">
                   Claimity integrates seamlessly into your existing IT landscape — without complex migration.
                 </p>
               </div>
@@ -553,21 +642,21 @@ export default function Home() {
               {/* Checkmark List */}
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <Check className="h-5 w-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-base text-white">API-first</span>
+                  <Check className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                  <span className="text-base text-gray-900">API-first</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Check className="h-5 w-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-base text-white">Swiss hosting</span>
+                  <Check className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                  <span className="text-base text-gray-900">Swiss hosting</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Check className="h-5 w-5 text-teal-400 flex-shrink-0" />
-                  <span className="text-base text-white">GDPR-compliant</span>
+                  <Check className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                  <span className="text-base text-gray-900">GDPR-compliant</span>
                 </div>
               </div>
 
               <Link href="/en/contact">
-                <Button className="bg-white hover:bg-gray-100 text-gray-900 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
+                <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
                   Schedule a technical call
                 </Button>
               </Link>
@@ -581,15 +670,15 @@ export default function Home() {
                   <RefreshCw className="h-6 w-6 text-teal-400" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">API integration</h3>
-                  <p className="text-base text-gray-300 leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">API integration</h3>
+                  <p className="text-base text-gray-600 leading-relaxed">
                     RESTful API for simple integration with insurance and core systems
                   </p>
                 </div>
               </div>
 
               {/* Divider */}
-              <div className="border-t border-gray-700"></div>
+              <div className="border-t border-gray-200"></div>
 
               {/* Feature 2 - Secure data transfer */}
               <div className="flex gap-6 items-start">
@@ -597,15 +686,15 @@ export default function Home() {
                   <ArrowRight className="h-6 w-6 text-teal-400 rotate-90" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">Secure data transfer</h3>
-                  <p className="text-base text-gray-300 leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">Secure data transfer</h3>
+                  <p className="text-base text-gray-600 leading-relaxed">
                     TLS 1.3, end-to-end encryption, Swiss data centers
                   </p>
                 </div>
               </div>
 
               {/* Divider */}
-              <div className="border-t border-gray-700"></div>
+              <div className="border-t border-gray-200"></div>
 
               {/* Feature 3 - Customizable workflows */}
               <div className="flex gap-6 items-start">
@@ -613,15 +702,15 @@ export default function Home() {
                   <Settings className="h-6 w-6 text-teal-400" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">Customizable workflows</h3>
-                  <p className="text-base text-gray-300 leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">Customizable workflows</h3>
+                  <p className="text-base text-gray-600 leading-relaxed">
                     Individual assignment logic by region, domain, and priority
                   </p>
                 </div>
               </div>
 
               {/* Divider */}
-              <div className="border-t border-gray-700"></div>
+              <div className="border-t border-gray-200"></div>
 
               {/* Feature 4 - Zero-trust ready */}
               <div className="flex gap-6 items-start">
@@ -629,98 +718,9 @@ export default function Home() {
                   <Shield className="h-6 w-6 text-teal-400" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-white">Zero-trust ready</h3>
-                  <p className="text-base text-gray-300 leading-relaxed">
+                  <h3 className="text-xl font-bold text-gray-900">Zero-trust ready</h3>
+                  <p className="text-base text-gray-600 leading-relaxed">
                     Modern security architecture for the highest compliance requirements
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section - How it works */}
-      <section id="process" className="bg-white py-12 md:py-20 lg:py-32">
-        <div className="mx-auto max-w-7xl px-6">
-          {/* Section Header */}
-          <div className="grid lg:grid-cols-2 gap-12 items-start mb-6 md:mb-8">
-            {/* Left - Heading */}
-            <div className="space-y-4">
-              <p className="text-sm font-semibold text-teal-600 tracking-wide uppercase">How it works</p>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Four steps to digital claims management
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-2">
-                From notification to settlement — fully automated and transparent.
-              </p>
-            </div>
-
-            {/* Right - Carousel */}
-            <FeatureCarousel
-              images={[
-                { src: "/assets/en/new_claim.png", alt: "Automatic assignment – new claim" },
-                { src: "/assets/en/claim.png", alt: "Report damage – upload and recording" },
-                { src: "/assets/en/report.png", alt: "Report and closure – standardized documents" },
-              ]}
-            />
-          </div>
-
-          {/* Process Steps */}
-          <div className="relative">
-            {/* Dashed Line */}
-            <div className="hidden lg:block absolute top-8 left-0 right-0 h-0.5 border-t-2 border-dashed border-gray-300"></div>
-
-            {/* Steps Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
-              {/* Step 1 */}
-              <div className="space-y-6">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
-                  <span className="text-2xl font-bold text-white">1</span>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900">Report a claim</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    Upload via portal, API integration, or email — flexible and simple
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 2 */}
-              <div className="space-y-6">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
-                  <span className="text-2xl font-bold text-white">2</span>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900">Automatic assignment</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    The system selects the best expert by availability, domain, and region
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 3 */}
-              <div className="space-y-6">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
-                  <span className="text-2xl font-bold text-white">3</span>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900">Processing & report</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    Expert produces a standardized report — central, digital, and auditable
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 4 */}
-              <div className="space-y-6">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center relative z-10">
-                  <span className="text-2xl font-bold text-white">4</span>
-                </div>
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-gray-900">Closure & settlement</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    Digital approval, automatic settlement, complete documentation
                   </p>
                 </div>
               </div>
@@ -904,7 +904,39 @@ export default function Home() {
       {/* Final CTA Section */}
       <section className="bg-gray-50 py-12 md:py-20 lg:py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="bg-[#194D50] rounded-3xl px-6 md:px-12 py-16 lg:py-20">
+          <div className="bg-white rounded-3xl px-6 md:px-12 py-16 lg:py-20 shadow-sm hover:shadow-md transition-shadow">
+            <div className="text-center space-y-8">
+              {/* Heading */}
+              <div className="space-y-4">
+                <h2 className="text-3xl lg:text-4xl font-bold text-gray-700 leading-tight">
+                  Ready for digital claims management?
+                </h2>
+                <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+                  Start today with a non-binding demo and experience how Claimity transforms your processes.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-4">
+                <Link href="/en/#book">
+                  <Button variant="outline" className="border-gray-300 text-gray-900 hover:bg-gray-50 px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg flex items-center gap-2 bg-transparent">
+                    Request a demo
+                  </Button>
+                </Link>
+                <Link href="/en/contact">
+                  <Button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-4 sm:px-8 sm:py-6 text-base rounded-lg font-medium">
+                    Contact us
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="bg-white py-12 md:py-20 lg:py-32">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="bg-[#1a1f2e] rounded-3xl px-6 md:px-12 py-16 lg:py-20">
             <div className="text-center space-y-8">
               {/* Heading */}
               <div className="space-y-4">
