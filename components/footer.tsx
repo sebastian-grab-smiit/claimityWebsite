@@ -87,7 +87,7 @@ export function Footer() {
           privacy: "Politique de confidentialité",
           terms: "Conditions d'utilisation",
           imprint: "Mentions légales",
-          companyName: "Claimity AG",
+          companyName: "Claimity SA",
           street: "Wisentalstrasse 7a",
           city: "8185 Winkel",
           country: "Suisse",

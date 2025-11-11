@@ -39,7 +39,7 @@ export default function PrivacyPageFR() {
                 Le responsable du traitement des données sur ce site est&nbsp;:
               </p>
               <div className="space-y-1 mt-4 text-gray-700">
-                <p className="font-semibold">Claimity AG</p>
+                <p className="font-semibold">Claimity SA</p>
                 <p>Wisentalstrasse 7a</p>
                 <p>8185 Winkel</p>
                 <p>Suisse</p>

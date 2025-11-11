@@ -17,7 +17,7 @@ export default function LegalNoticeFR() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Adresse</h2>
               <div className="space-y-1">
-                <p className="font-semibold">Claimity AG</p>
+                <p className="font-semibold">Claimity SA</p>
                 <p>Wisentalstrasse 7a</p>
                 <p>8185 Winkel</p>
                 <p>Suisse</p>
@@ -82,7 +82,7 @@ export default function LegalNoticeFR() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Droits d’auteur</h2>
               <p className="leading-relaxed">
                 Les droits d’auteur et tous les autres droits relatifs aux contenus, images, photos ou autres fichiers
-                publiés sur ce site appartiennent exclusivement à Claimity AG ou aux titulaires de droits expressément
+                publiés sur ce site appartiennent exclusivement à Claimity SA ou aux titulaires de droits expressément
                 mentionnés. Toute reproduction d’éléments nécessite l’accord écrit préalable des titulaires des droits.
               </p>
             </section>

@@ -15,7 +15,7 @@ export default function TermsPageFR() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptation des conditions</h2>
               <p className="text-gray-700 leading-relaxed">
-                En accédant à la plateforme et aux services de Claimity AG ou en les utilisant, vous acceptez les
+                En accédant à la plateforme et aux services de Claimity SA ou en les utilisant, vous acceptez les
                 présentes conditions d’utilisation ainsi que l’ensemble des lois et réglementations applicables. Si
                 vous n’acceptez pas ces conditions, vous n’êtes pas autorisé à utiliser nos services.
               </p>
@@ -24,7 +24,7 @@ export default function TermsPageFR() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Licence d’utilisation</h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                Sous réserve du respect des présentes conditions, Claimity AG vous accorde une licence limitée,
+                Sous réserve du respect des présentes conditions, Claimity SA vous accorde une licence limitée,
                 non exclusive et non transférable pour utiliser nos services à des fins internes professionnelles.
                 Cette licence n’inclut pas&nbsp;:
               </p>
@@ -64,7 +64,7 @@ export default function TermsPageFR() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Propriété intellectuelle</h2>
               <p className="text-gray-700 leading-relaxed">
                 L’ensemble des contenus, fonctionnalités et fonctionnalités de nos services — y compris, sans s’y
-                limiter, les textes, graphiques, logos et logiciels — sont la propriété de Claimity AG et sont
+                limiter, les textes, graphiques, logos et logiciels — sont la propriété de Claimity SA et sont
                 protégés par les lois internationales relatives aux droits d’auteur, aux marques et à la propriété
                 intellectuelle.
               </p>
@@ -91,7 +91,7 @@ export default function TermsPageFR() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">8. Limitation de responsabilité</h2>
               <p className="text-gray-700 leading-relaxed">
-                Dans les limites permises par la loi, Claimity AG ne saurait être tenue responsable des dommages
+                Dans les limites permises par la loi, Claimity SA ne saurait être tenue responsable des dommages
                 indirects, accessoires, spéciaux, consécutifs ou punitifs résultant de l’utilisation ou de
                 l’impossibilité d’utiliser nos services.
               </p>
@@ -134,7 +134,7 @@ export default function TermsPageFR() {
                 <strong>E‑mail&nbsp;:</strong> info@claimity.ch
               </p>
               <p>
-                <strong>Adresse&nbsp;:</strong> Claimity AG, Wisentalstrasse 7a, 8185 Winkel, Suisse
+                <strong>Adresse&nbsp;:</strong> Claimity SA, Wisentalstrasse 7a, 8185 Winkel, Suisse
               </p>
             </div>
           </div>
